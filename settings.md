@@ -48,3 +48,5 @@ Export audit logs.
 **API**  
 - `GET /api/settings/audit/info`
 - `POST /api/settings/audit/export` → `{"url":"https://.../audit-2025-08-10.ndjson"}`
+
+
