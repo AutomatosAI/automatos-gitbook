@@ -1,20 +1,48 @@
-# Workflow Management
+---
+title: Workflow Management
+cover: assets/social-card.png
+---
 
-## Overview
-Workflows chain multiple agents and tools into orchestrated sequences.
+Workflows chain agents and tools into a **DAG** you can run and reuse.
 
-## Workflow List
-View all workflows with search and filtering.
+## Build a Workflow
+1. **New Workflow** → fill **Name/Description/Policy**.  
+2. Open **Canvas** → add **Agent**, **Tool**, **Branch** nodes; connect edges.  
+3. Save.
 
-## Creating a Workflow
-- Name, description, default policy.
-- Add nodes and edges in the Workflow Canvas.
+**API**  
+> **Authentication**  
+> All API calls require headers:  
+> ```http
+> X-API-Key: <your_key>
+> Authorization: Bearer <your_token>
+> ```
 
-## Workflow Canvas
-A visual editor to design the sequence of agents and tools. Supports JSON editing.
+- `POST /api/workflows`  
+```json
+{ "name":"Bug Triage","policy_id":"support_policy","graph":{"nodes":[...],"edges":[...]} }
+```
 
-## Running Workflows
-Execute manually with custom inputs.
+## Run & Monitor
+Click **Run**, pass inputs (JSON), watch spans in **Runs**.
 
-## Promote from Run
-Convert an existing run into a reusable workflow.
+**API**  
+- `POST /api/workflows/{id}/run` → `{"run_id":"run_123"}`  
+- `GET /api/runs?workflow_id={id}&limit=50`
+
+## Promote a Run
+Convert a successful trace into a workflow template.
+
+**API (optional)**  
+`POST /api/workflows/promote` → `{"workflow_id":"wf_new"}`
+
+## Diagram
+```mermaid
+flowchart LR
+  Start((Input)) --> A[Agent]
+  A --> T[Tool]
+  T --> B{Branch?}
+  B -- yes --> A2[Agent 2]
+  B -- no  --> End((Output))
+  A2 --> End
+```

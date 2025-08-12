@@ -1,18 +1,44 @@
-# Analytics
+---
+title: Analytics
+cover: assets/social-card.png
+---
 
-## Overview
-The Analytics page provides performance insights, usage trends, and cost analysis.
+Measure quality, latency, usage, and cost.
 
-## Performance Tab
-- Latency (p50/p95)
-- Success rate
-- Retrieval hit rate
+## Performance
+Trends for **success**, **latency**, and **retrieval** quality.
 
-## Usage Tab
-- Runs per agent
-- Runs per workflow
-- Total run volume
+**API**  
+> **Authentication**  
+> All API calls require headers:  
+> ```http
+> X-API-Key: <your_key>
+> Authorization: Bearer <your_token>
+> ```
 
-## Cost Tab
-- Daily/weekly/monthly cost breakdown
-- Trend visualizations
+`GET /api/analytics/performance?start=&end=`  
+```json
+{ "success_rate":0.91,"latency":{"p50":850,"p95":2400},"retrieval":{"hit_rate":0.64} }
+```
+
+## Usage
+Runs per agent/workflow; peak hours.
+
+**API**  
+`GET /api/analytics/usage?start=&end=`  
+```json
+{ "runs_total": 5200, "by_agent":[{"agent":"Code Assistant","runs":1200}] }
+```
+
+## Cost
+Daily/weekly spend; top contributors.
+
+**API**  
+`GET /api/analytics/cost?interval=daily&start=&end=`  
+```json
+[{"date":"2025-08-01","cost_usd":4.12}]
+```
+
+## Tips
+- Compare **A/B** results over the same window.  
+- Track cost per successful run.

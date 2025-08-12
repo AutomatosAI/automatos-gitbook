@@ -1,16 +1,36 @@
-# Knowledge
+---
+title: Knowledge
+cover: assets/social-card.png
+---
 
-## Overview
-Manage your data sources, documents, and code graph for retrieval-augmented generation.
+Manage **Sources** (docs/repos), explore **Documents**, and search the **Code Graph**.
 
-## Sources Tab
-- Add, index, and delete sources.
-- View status, size, and last indexed date.
+## Sources
+Add, index, and delete sources; track status and size.
 
-## Documents Tab
-- Search and filter documents by source or tags.
-- Reindex selected sources.
+**API**  
+> **Authentication**  
+> All API calls require headers:  
+> ```http
+> X-API-Key: <your_key>
+> Authorization: Bearer <your_token>
+> ```
 
-## Code Graph Tab
-- Search project code.
-- Used for context injection in the CODE slot.
+- `GET /api/sources`  
+- `POST /api/sources` (body: `{"name":"Repo","type":"git","config":{"url":"..."}}`)  
+- `POST /api/sources/{id}/index`  
+- `DELETE /api/sources/{id}`
+
+## Documents
+Search and filter documents; reindex when schemas change.
+
+**API**  
+- `GET /api/documents?source_id=&q=&limit=&offset=&tag=`  
+- `POST /api/documents/reindex` (body: `{"source_id":"..."}`)
+
+## Code Graph
+Search project code and emit a compact **CODE slot** block.
+
+**API**  
+- `POST /api/codegraph/index` (body: `{"project":"automatos-ai","root_dir":"/repo"}`)  
+- `GET /api/codegraph/search?project=&q=&limit=`

@@ -1,19 +1,45 @@
-# Agent Management
+---
+title: Agent Management
+cover: assets/social-card.png
+---
 
-## Overview
-Manage your AI agents, which are specialized configurations of policies, tools, and budgets.
+Agents encapsulate **role**, **tools**, and a default **policy**.
 
-## Agent List
-- View all agents with search and filtering.
-- Click on an agent to view details.
+## Create an Agent
+1. Go to **Agents → New**.  
+2. Fill **Name**, **Description** (optional).  
+3. Pick **Default Policy**.  
+4. Enable **Tools** and set budgets/timeouts.  
+5. **Save**.
 
-## Creating an Agent
-- Name and description.
-- Default policy selection.
-- Tool budget and list of available tools.
+**API**  
+> **Authentication**  
+> All API calls require headers:  
+> ```http
+> X-API-Key: <your_key>
+> Authorization: Bearer <your_token>
+> ```
 
-## Editing an Agent
-Update parameters such as policy, budget, and connected workflows.
+- `POST /api/agents`  
+```json
+{ "name":"Code Assistant","policy_id":"code_assistant","tools":["search","exec"],"limits":{"max_tokens":4096,"budget_usd":5} }
+```
 
-## Runs Tab
-See execution history for a given agent with timestamps, inputs, and outputs.
+## Edit / Delete
+Update policy/tools/limits or remove unused agents.
+
+**API**  
+- `GET /api/agents` (list)  
+- `GET /api/agents/{id}` (detail)  
+- `PUT /api/agents/{id}` (update)  
+- `DELETE /api/agents/{id}` (delete)
+
+## Runs
+Inspect recent runs for a given agent.
+
+**API**  
+`GET /api/runs?agent_id={id}&limit=50`
+
+## Tips
+- Start with a conservative **budget**.  
+- Keep tool lists minimal per agent to reduce ambiguity.

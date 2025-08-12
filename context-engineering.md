@@ -1,16 +1,48 @@
-# Context Engineering
+---
+title: Context Engineering
+cover: assets/social-card.png
+---
 
-## Overview
-Fine-tune how agents assemble their prompts using **policies**.
+Define how prompts are assembled via **Policies** with explicit slots, weights, and budgets.
 
 ## Policy Editor
-- **Slots** — Logical sections of context (e.g., system, history, documents).
-- **Weights** — Relative importance of each slot.
-- **Gates** — Rules for including/excluding a slot.
-- **Budgets** — Character/token limits per slot.
+Slots:
+- **INSTRUCTION** — system guidance
+- **MEMORY** — episodic/semantic summaries
+- **RETRIEVAL** — top‑k doc chunks
+- **CODE** — code graph prompt block
+- **TOOLS** — tool schemata/examples
+- **CONSTRAINTS** — output format/guardrails
+
+**API**  
+> **Authentication**  
+> All API calls require headers:  
+> ```http
+> X-API-Key: <your_key>
+> Authorization: Bearer <your_token>
+> ```
+
+- `GET /api/policy/{policy_id}?tenant_id=`  
+- `PUT /api/policy/{policy_id}` (body: `{"policy": ContextPolicy}`)
 
 ## Assembly Preview
-Enter a query to see the assembled prompt and per-slot statistics.
+Paste a query → see the final prompt and per‑slot stats.
 
-## Saving Policies
-Changes are saved to `/api/policy/{policy_id}` and used in production runs.
+**API**  
+`POST /api/policy/{policy_id}/assemble`  
+```json
+{ "q":"How do I paginate?", "slot_values":{"CODE":"// function listItems(page) Ellipsis"} }
+```
+
+## Allocation Diagram
+```mermaid
+graph TD
+  Q[Query] --> A[Allocator]
+  P1[INSTRUCTION] --> A
+  P2[MEMORY] --> A
+  P3[RETRIEVAL] --> A
+  P4[CODE] --> A
+  P5[TOOLS] --> A
+  P6[CONSTRAINTS] --> A
+  A --> Prompt[Assembled Prompt]
+```
