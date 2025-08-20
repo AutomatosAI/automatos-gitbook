@@ -22,8 +22,7 @@ Automatos AI is an orchestration platform that blends **symbolic mechanisms**, *
 ```mermaid
 flowchart LR
   U[User / System] --> A[Agent]
-  A -->|Context Assembly| P[Policy Slots
-(INSTRUCTION,MEMORY,RETRIEVAL,CODE,TOOLS,CONSTRAINTS)]
+  A -->|Context Assembly| P["Policy Slots<br/>(INSTRUCTION,MEMORY,RETRIEVAL,CODE,TOOLS,CONSTRAINTS)"]
   A --> T[Tools / Models]
   subgraph Knowledge
     D[Documents]:::k --> RAG[(Vector DB)]
