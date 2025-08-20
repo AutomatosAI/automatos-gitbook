@@ -1,6 +1,6 @@
 ---
 title: Settings
-cover: assets/social-card.png
+cover: assets/social-card.jpeg
 ---
 
 Configure tenants, providers, feature flags, CORS, and audit.

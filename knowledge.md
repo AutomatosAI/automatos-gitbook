@@ -1,6 +1,6 @@
 ---
 title: Knowledge
-cover: assets/social-card.png
+cover: assets/social-card.jpeg
 ---
 
 Manage **Sources** (docs/repos), explore **Documents**, and search the **Code Graph**.

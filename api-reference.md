@@ -1,6 +1,6 @@
 ---
 title: API Reference
-cover: assets/social-card.png
+cover: assets/social-card.jpeg
 ---
 
 > Base path: `/api`  

@@ -1,6 +1,6 @@
 ---
 title: Workflow Management
-cover: assets/social-card.png
+cover: assets/social-card.jpeg
 ---
 
 Workflows chain agents and tools into a **DAG** you can run and reuse.

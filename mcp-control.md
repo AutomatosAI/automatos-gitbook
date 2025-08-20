@@ -1,6 +1,6 @@
 ---
 title: MCP Control
-cover: assets/social-card.png
+cover: assets/social-card.jpeg
 ---
 
 Automate Automatos from other agents via **Model Context Protocol (MCP)**.
