@@ -1,5 +1,6 @@
-# Summary
+# Table of contents
 
+* [README](README.md)
 * [About Automatos AI](about.md)
 * [Dashboard](dashboard.md)
 * [Agent Management](agents.md)
