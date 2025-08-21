@@ -1,6 +1,5 @@
 ---
 title: Agent Management
-cover: assets/social-card.jpeg
 ---
 
 Agents encapsulate **role**, **tools**, and a default **policy**.
