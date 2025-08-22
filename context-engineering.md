@@ -1,6 +1,5 @@
 ---
 title: Context Engineering
-cover: assets/social-card.png
 ---
 
 Define how prompts are assembled via **Policies** with explicit slots, weights, and budgets.

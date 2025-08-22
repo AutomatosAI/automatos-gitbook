@@ -1,6 +1,5 @@
 ---
 title: Dashboard
-cover: assets/social-card.jpeg
 ---
 
 The **Dashboard** is your control room: live **KPIs**, **runs**, and **A/B state**.

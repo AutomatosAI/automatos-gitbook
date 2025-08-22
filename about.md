@@ -1,6 +1,5 @@
 ---
 title: About Automatos AI
-cover: assets/social-card.jpeg
 ---
 
 Automatos AI is an orchestration platform that blends **symbolic mechanisms**, **neural fields**, and **quantum semantics** into a practical system for building reliable copilots and automations.

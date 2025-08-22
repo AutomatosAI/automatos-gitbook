@@ -1,6 +1,5 @@
 ---
 title: Analytics
-cover: assets/social-card.jpeg
 ---
 
 Measure quality, latency, usage, and cost.

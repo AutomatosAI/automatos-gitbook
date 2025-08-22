@@ -1,6 +1,5 @@
 ---
 title: Playbooks
-cover: assets/social-card.jpeg
 ---
 
 Playbooks capture **reusable patterns** discovered from **RunEvents**.
