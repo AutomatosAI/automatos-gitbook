@@ -1,67 +1,99 @@
 ---
-title: API Reference
+description: REST API endpoints for programmatic access.
 ---
 
-> Base path: `/api`  
-> **Authentication**  
-> All API calls require headers:  
-> ```http
-> X-API-Key: <your_key>
-> Authorization: Bearer <your_token>
-> ```
+# API Reference
 
+Automatos AI exposes a REST API for programmatic access to all platform features.
 
-## System
-- `GET /api/system/health`
-- `GET /api/system/metrics`
+## Base URL
 
-## Agents
-- `GET /api/agents?q=&limit=&offset=&tenant_id=` → `{ items, total }`
-- `GET /api/agents/{id}`
-- `POST /api/agents`
-- `PUT /api/agents/{id}`
-- `DELETE /api/agents/{id}`
-- `GET /api/runs?agent_id={id}&limit=50`
+```
+https://your-instance.railway.app/api
+```
 
-## Workflows
-- `GET /api/workflows?q=&limit=&offset=`
-- `GET /api/workflows/{id}`
-- `POST /api/workflows`
-- `PUT /api/workflows/{id}`
-- `DELETE /api/workflows/{id}`
-- `POST /api/workflows/{id}/run`
-- `GET /api/runs?workflow_id={id}&limit=50`
+Or locally: `http://localhost:8000/api`
 
-## Policies
-- `GET /api/policy/{policy_id}?tenant_id=`
-- `PUT /api/policy/{policy_id}`
-- `POST /api/policy/{policy_id}/assemble`
-- `POST /api/policy/abtest/set`
-- `GET /api/policy/abtest/get?policy_a=&policy_b=`
+## Authentication
 
-## Knowledge
-- Sources:
-  - `GET /api/sources`
-  - `POST /api/sources`
-  - `POST /api/sources/{id}/index`
-  - `DELETE /api/sources/{id}`
-- Documents:
-  - `GET /api/documents?source_id=&q=&limit=&offset=&tag=`
-  - `POST /api/documents/reindex`
-- Code Graph:
-  - `POST /api/codegraph/index`
-  - `GET /api/codegraph/search?project=&q=&limit=`
+All API calls require authentication headers:
 
-## Playbooks
-- `GET /api/playbooks?tenant_id=`
-- `POST /api/playbooks/mine`
-- Optional:
-  - `POST /api/playbooks/promote`
-  - `POST /api/playbooks/attach`
+```http
+Authorization: Bearer <your_clerk_token>
+X-Workspace-ID: <your_workspace_id>
+```
 
-## Settings
-- Tenants: `GET|POST /api/settings/tenants`, `PUT|DELETE /api/settings/tenants/{id}`
-- Providers: `GET|PUT /api/settings/providers`
-- Flags: `GET /api/settings/flags`, `PUT /api/settings/flags/{key}`
-- CORS: `GET|PUT /api/settings/cors`
-- Audit: `GET /api/settings/audit/info`, `POST /api/settings/audit/export`
+## Interactive docs
+
+The full API documentation with request/response schemas is available at:
+
+```
+https://your-instance.railway.app/docs
+```
+
+This is an auto-generated Swagger/OpenAPI interface where you can test endpoints directly.
+
+<!-- IMAGE: Swagger API docs interface -->
+
+## Key endpoint groups
+
+### System
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/health` | Health check |
+| `GET` | `/api/system/metrics` | System metrics |
+
+### Agents
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/agents` | List all agents |
+| `GET` | `/api/agents/{id}` | Get agent details |
+| `POST` | `/api/agents` | Create an agent |
+| `PUT` | `/api/agents/{id}` | Update an agent |
+| `DELETE` | `/api/agents/{id}` | Delete an agent |
+
+### Chat
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `POST` | `/api/chat` | Send a message (SSE streaming response) |
+| `GET` | `/api/chat/conversations` | List conversations |
+| `GET` | `/api/chat/conversations/{id}` | Get conversation history |
+
+### Documents
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/documents` | List documents |
+| `POST` | `/api/documents/upload` | Upload a document |
+| `DELETE` | `/api/documents/{id}` | Delete a document |
+| `POST` | `/api/documents/search` | Semantic search |
+
+### Workflows / Recipes
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/workflows` | List recipes |
+| `POST` | `/api/workflows` | Create a recipe |
+| `POST` | `/api/workflows/{id}/run` | Execute a recipe |
+
+### Workspaces
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/workspaces/current` | Get current workspace |
+| `GET` | `/api/workspaces/members` | List workspace members |
+
+### Analytics
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/analytics/overview` | Workspace metrics summary |
+| `GET` | `/api/analytics/costs` | LLM cost breakdown |
+| `GET` | `/api/analytics/agents` | Per-agent analytics |
+
+{% hint style="info" %}
+For the complete endpoint list with request/response schemas, use the interactive Swagger docs at `/docs` on your instance.
+{% endhint %}

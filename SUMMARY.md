@@ -1,30 +1,69 @@
 # Table of contents
 
 ## Overview
-* [README](README.md)
+
+* [Welcome](README.md)
 * [About Automatos AI](about.md)
 
 ## User Guides
 
-* [Dashboard](dashboard.md)
-* [Agent Management](agents.md)
-* [Workflow Management](workflows.md)
-* [Knowledge](knowledge.md)
-* [Context Engineering](context-engineering.md)
-* [AI Assistant](chatbot.md)
-* [Tools](tools.md)
-* [Playbooks](playbooks.md)
-* [Settings](settings.md)
-* [Analytics](analytics.md)
+* [Chat](chat/README.md)
+  * [Routing & Auto Mode](chat/routing.md)
+  * [Quick Actions](chat/quick-actions.md)
+  * [Chat History](chat/history.md)
+
+* [Agents](agents/README.md)
+  * [Agent Roster](agents/roster.md)
+  * [Creating an Agent](agents/creating.md)
+  * [Agent Details](agents/details.md)
+  * [Configuration](agents/configuration.md)
+  * [Coordination](agents/coordination.md)
+  * [Recipes](agents/recipes.md)
+
+* [Activity](activity/README.md)
+  * [Dashboard](activity/dashboard.md)
+  * [Feed](activity/feed.md)
+  * [Reports](activity/reports.md)
+  * [Memory](activity/memory.md)
+  * [Missions](activity/missions.md)
+
+* [Tools & Integrations](tools/README.md)
+  * [Connecting Apps](tools/connecting-apps.md)
+  * [Assigning Tools to Agents](tools/assigning.md)
+  * [Security](tools/security.md)
+
+* [Knowledge Bases](knowledge/README.md)
+  * [Documents](knowledge/documents.md)
+  * [Cloud Sync](knowledge/cloud-sync.md)
+  * [Database](knowledge/database.md)
+  * [Templates](knowledge/templates.md)
+  * [CodeGraph](knowledge/codegraph.md)
+
+* [Marketplace](marketplace/README.md)
+  * [Applications](marketplace/applications.md)
+  * [Agents](marketplace/agents.md)
+  * [Recipes](marketplace/recipes.md)
+  * [LLMs](marketplace/llms.md)
+  * [Capabilities](marketplace/capabilities.md)
+
+* [Team Management](team/README.md)
+  * [Inviting Members](team/inviting.md)
+  * [Roles & Permissions](team/roles.md)
+
+* [Analytics](analytics/README.md)
+  * [Overview](analytics/overview.md)
+  * [Agents](analytics/agents.md)
+  * [Workflows](analytics/workflows.md)
+  * [Documents](analytics/documents.md)
+  * [LLM & Costs](analytics/llm-costs.md)
+  * [Tools & Integrations](analytics/tools.md)
+
+* [Settings](settings/README.md)
+  * [General](settings/general.md)
+  * [API Keys & Credentials](settings/credentials.md)
+  * [Models](settings/models.md)
+  * [Audit Logs](settings/audit-logs.md)
 
 ## Reference
 
 * [API Reference](api-reference.md)
-* [MCP Control](mcp-control.md)
-
-## Resources
-
-* [Image Naming Guide](IMAGE_NAMING_GUIDE.md)
-* [Implementation Summary](IMPLEMENTATION_SUMMARY.md)
-* [Contributing](CONTRIBUTING.md)
-* [Code of Conduct](CODE_OF_CONDUCT.md)

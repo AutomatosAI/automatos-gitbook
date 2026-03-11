@@ -1,36 +1,58 @@
 ---
-title: About Automatos AI
+description: What Automatos AI is and how it works.
 ---
 
-Automatos AI is an orchestration platform that blends **symbolic mechanisms**, **neural fields**, and **quantum semantics** into a practical system for building reliable copilots and automations.
+# About Automatos AI
 
-## Why Automatos
-- **Mathematical assembly** — `C = A(c₁..c₆)` allocates prompt space across slots (INSTRUCTION, MEMORY, RETRIEVAL, CODE, TOOLS, CONSTRAINTS) with **weights** and **budgets**.
-- **Research‑validated ideas** — concepts inspired by IBM Zurich, Princeton ICML (symbolic heads), Indiana University (observer‑dependent semantics), Singapore‑MIT (reasoning‑driven memory consolidation).
-- **Production features** — multi‑agent workflows, code graph retrieval, playbook mining, A/B testing, analytics, and tenant‑aware settings.
+Automatos AI is an open-source multi-agent orchestration platform. It lets you create specialised AI agents, give them tools and knowledge, and coordinate them to handle complex tasks autonomously.
 
-## Typical Flow
-1. **Create agents** with a default **context policy** and tools.  
-2. **Index knowledge** (docs + repos) for retrieval and the **code graph**.  
-3. **Build workflows** chaining agents and tools.  
-4. **Run & monitor**, mine **playbooks**, tune **policies** with **Assembly Preview**.  
-5. **Measure** in Analytics + compare via **A/B**.  
-6. Govern via **Settings** (tenants, providers, flags, CORS, audit).
+## Core ideas
 
-## Architecture (high level)
+**Agents are workers, not chatbots.** Each agent has a specific role (Code Reviewer, Sentinel, QA Engineer), its own model configuration, persona, and set of tools. They don't just answer questions — they do work.
+
+**The platform routes, you don't have to.** A multi-tier Universal Router analyses every message and sends it to the best agent automatically. You can override routing or let the system learn from corrections.
+
+**Knowledge powers everything.** Upload documents, sync cloud folders, index code repositories — agents get RAG-powered access to search and reference your data.
+
+**Visibility is built in.** Every agent action, tool call, and LLM request is tracked. See real-time activity, read agent reports, and monitor costs down to the per-request level.
+
+## Architecture at a glance
+
 ```mermaid
 flowchart LR
-  U[User / System] --> A[Agent]
-  A -->|Context Assembly| P["Policy Slots<br/>(INSTRUCTION,MEMORY,RETRIEVAL,CODE,TOOLS,CONSTRAINTS)"]
-  A --> T[Tools / Models]
-  subgraph Knowledge
-    D[Documents]:::k --> RAG[(Vector DB)]
-    C[Code Graph]:::k
-  end
-  P --> RAG
-  P --> C
-  A --> W[Workflows] --> E[Telemetry]
-  E --> PL[Playbook Mining]
-  A --> AN[Analytics/A-B]
-  classDef k fill:#f5f5f5,stroke:#ddd
+  U[You] --> Chat[Chat Interface]
+  Chat --> Router[Universal Router]
+  Router --> A1[Agent A]
+  Router --> A2[Agent B]
+  Router --> A3[Agent C]
+  A1 --> Tools[Tools & Apps]
+  A2 --> KB[Knowledge Base]
+  A3 --> Code[Workspace]
+  A1 --> Reports[Activity & Reports]
+  A2 --> Reports
+  A3 --> Reports
 ```
+
+## Tech stack
+
+| Layer | Technology |
+| --- | --- |
+| **Frontend** | Next.js 14, TypeScript, Tailwind CSS, shadcn/ui |
+| **Backend** | Python, FastAPI, SQLAlchemy, PostgreSQL, Redis |
+| **AI** | Multi-provider — OpenRouter, OpenAI, Anthropic, DeepSeek |
+| **Storage** | AWS S3 for documents, S3 Vectors for embeddings |
+| **Auth** | Clerk with full workspace isolation |
+| **Infra** | Docker, Railway |
+
+## Key concepts
+
+| Concept | What it is |
+| --- | --- |
+| **Agent** | An AI worker with a model, persona, tools, and skills |
+| **Workspace** | An isolated environment for a team — agents, data, and config are scoped to it |
+| **Recipe** | A multi-step workflow that coordinates multiple agents |
+| **Plugin** | A marketplace-distributed package of skills, commands, and agent configs |
+| **Skill** | A git-based capability loaded into an agent from a repository |
+| **Tool** | An external app integration (GitHub, Slack, Jira) via Composio |
+| **Knowledge Base** | A collection of documents indexed for semantic search (RAG) |
+| **Universal Router** | The system that automatically sends messages to the right agent |
