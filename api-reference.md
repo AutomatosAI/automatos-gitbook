@@ -78,7 +78,7 @@ This is an auto-generated Swagger/OpenAPI interface where you can test endpoints
 | `GET` | `/api/missions/{id}/events` | Paginated event timeline |
 | `GET` | `/api/missions/{id}/costs` | Task cost breakdown |
 | `GET` | `/api/missions/archived` | List archived missions with search |
-| `POST` | `/api/missions/{id}/save-as-routine` | Convert completed mission to recipe |
+| `POST` | `/api/missions/{id}/save-as-routine` | Convert completed mission to playbook |
 | `GET` | `/api/missions/stats` | Workspace-wide mission statistics |
 
 ### Documents & Knowledge
@@ -124,21 +124,21 @@ This is an auto-generated Swagger/OpenAPI interface where you can test endpoints
 | `GET` | `/api/database-knowledge/{id}/benchmarks` | Run accuracy benchmark |
 | `GET` | `/api/database-knowledge/{id}/audit` | Query audit log |
 
-### Workflows & Recipes
+### Workflows & Playbooks
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| `GET` | `/api/workflows` | List all recipes |
-| `POST` | `/api/workflows` | Create a recipe |
-| `GET` | `/api/workflows/{id}` | Get recipe details |
-| `PUT` | `/api/workflows/{id}` | Update a recipe |
-| `DELETE` | `/api/workflows/{id}` | Delete a recipe |
-| `POST` | `/api/workflows/{id}/run` | Execute a recipe (returns SSE stream) |
-| `GET` | `/api/workflow-recipes` | Browse marketplace recipes |
-| `POST` | `/api/workflow-recipes/{id}/install` | Install a marketplace recipe |
-| `POST` | `/api/workflow-recipes/{id}/submit` | Submit recipe to marketplace |
-| `GET` | `/api/workflow-recipes/categories` | List recipe categories |
-| `GET` | `/api/workflow-recipes/featured` | Featured marketplace recipes |
+| `GET` | `/api/workflows` | List all playbooks |
+| `POST` | `/api/workflows` | Create a playbook |
+| `GET` | `/api/workflows/{id}` | Get playbook details |
+| `PUT` | `/api/workflows/{id}` | Update a playbook |
+| `DELETE` | `/api/workflows/{id}` | Delete a playbook |
+| `POST` | `/api/workflows/{id}/run` | Execute a playbook (returns SSE stream) |
+| `GET` | `/api/workflow-recipes` | Browse marketplace playbooks |
+| `POST` | `/api/workflow-recipes/{id}/install` | Install a marketplace playbook |
+| `POST` | `/api/workflow-recipes/{id}/submit` | Submit playbook to marketplace |
+| `GET` | `/api/workflow-recipes/categories` | List playbook categories |
+| `GET` | `/api/workflow-recipes/featured` | Featured marketplace playbooks |
 | `GET` | `/api/execution-history` | Paginated execution history |
 | `GET` | `/api/execution-history/{id}` | Execution detail with pipeline stages |
 
@@ -338,7 +338,7 @@ Response includes pagination metadata:
 
 ## Streaming responses
 
-Chat and recipe execution endpoints return Server-Sent Events (SSE). Connect with any SSE-compatible client:
+Chat and playbook execution endpoints return Server-Sent Events (SSE). Connect with any SSE-compatible client:
 
 ```javascript
 const eventSource = new EventSource('/api/chat', {

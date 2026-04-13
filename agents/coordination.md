@@ -27,7 +27,7 @@ Configure how agents can delegate work:
 
 ## Inter-agent communication
 
-When agents work together on a recipe or mission:
+When agents work together on a playbook or mission:
 - Each agent sees the output of previous steps
 - Context is passed through the workflow pipeline
 - Results are aggregated in the Activity feed
@@ -48,11 +48,11 @@ You ask Code Reviewer to review a pull request. It notices authentication change
 
 ## Knowledge sharing between agents
 
-Agents working on the same mission or recipe can share context through:
+Agents working on the same mission or playbook can share context through:
 - **Workflow pipeline** — each step's output is available to the next step
 - **Scratchpad** — a shared workspace for intermediate results
 - **Memory** — agents can read each other's stored memories within the same workspace
 
 {% hint style="info" %}
-Coordination settings are most useful when running [Recipes](recipes.md) that chain multiple agents together.
+Coordination settings are most useful when running [Playbooks](playbooks.md) that chain multiple agents together.
 {% endhint %}

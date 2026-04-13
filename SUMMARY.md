@@ -19,7 +19,7 @@
   * [Agent Details](agents/details.md)
   * [Configuration](agents/configuration.md)
   * [Coordination](agents/coordination.md)
-  * [Recipes](agents/recipes.md)
+  * [Playbooks](agents/playbooks.md)
 
 * [Activity](activity/README.md)
   * [Dashboard](activity/dashboard.md)
@@ -45,7 +45,7 @@
 * [Marketplace](marketplace/README.md)
   * [Applications](marketplace/applications.md)
   * [Agents](marketplace/agents.md)
-  * [Recipes](marketplace/recipes.md)
+  * [Playbooks](marketplace/playbooks.md)
   * [LLMs](marketplace/llms.md)
   * [Capabilities](marketplace/capabilities.md)
 

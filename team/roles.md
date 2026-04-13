@@ -14,7 +14,7 @@ Every workspace member has one of three roles.
 | View activity and reports | Yes | Yes | Yes |
 | Create and edit agents | Yes | Yes | No |
 | Upload documents | Yes | Yes | No |
-| Run recipes | Yes | Yes | No |
+| Run playbooks | Yes | Yes | No |
 | Install marketplace items | Yes | Yes | No |
 | Connect tools | Yes | No | No |
 | Manage team members | Yes | No | No |

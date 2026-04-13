@@ -13,7 +13,7 @@ The Feed tab shows a chronological stream of all activity in your workspace.
 Every significant action generates a feed entry:
 - Agent responses to user messages
 - Tool calls (GitHub commits, Slack messages, API calls)
-- Recipe step completions
+- Playbook step completions
 - Report submissions
 - Memory operations
 - System events (agent start/stop, errors)
@@ -47,7 +47,7 @@ The feed captures every platform action:
 | --- | --- |
 | **Chat message** | User sent a message, agent responded |
 | **Tool call** | Agent called GitHub API to fetch a PR |
-| **Recipe step** | Step 3 of "Nightly Review" completed |
+| **Playbook step** | Step 3 of "Nightly Review" completed |
 | **Mission update** | Mission "API Audit" task 2 marked complete |
 | **Memory stored** | Agent saved a new fact to long-term memory |
 | **Report generated** | Sentinel generated a security standup report |

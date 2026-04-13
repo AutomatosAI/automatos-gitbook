@@ -54,7 +54,7 @@ Filter reports by:
 
 Agents create reports in two ways:
 
-1. **Automatic** — when an agent completes a scheduled recipe or heartbeat task, it generates a standup report summarising what it found, what it did, and any issues requiring attention
+1. **Automatic** — when an agent completes a scheduled playbook or heartbeat task, it generates a standup report summarising what it found, what it did, and any issues requiring attention
 2. **Manual** — agents can be asked to generate a report via chat: "Write a report on today's security findings"
 
 ### Report contents

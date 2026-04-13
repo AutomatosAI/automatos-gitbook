@@ -66,13 +66,13 @@ Some tools support automatic triggers — events in external services that kick 
 | **GitHub** | Push to branch, PR opened, issue filed |
 | **Slack** | Message posted, reaction added |
 
-Triggers are configured per-recipe. When an event fires, the associated recipe runs automatically. See [Recipes](../agents/recipes.md) for setup details.
+Triggers are configured per-playbook. When an event fires, the associated playbook runs automatically. See [Playbooks](../agents/playbooks.md) for setup details.
 
 ## Cron scheduling
 
-Schedule recurring tasks using cron expressions. Any recipe can be set to run on a schedule — daily reports, weekly audits, hourly monitoring checks.
+Schedule recurring tasks using cron expressions. Any playbook can be set to run on a schedule — daily reports, weekly audits, hourly monitoring checks.
 
-Configure schedules in the recipe's trigger settings. Common patterns:
+Configure schedules in the playbook's trigger settings. Common patterns:
 - `0 9 * * 1-5` — weekdays at 9 AM
 - `0 */6 * * *` — every 6 hours
 - `0 22 * * 0` — Sundays at 10 PM

@@ -23,7 +23,7 @@ Templates define the structure, sections, and formatting for a type of document.
 
 ## Using templates
 
-Templates are automatically available to agents. When a recipe or task calls for a specific output format, the agent references the matching template.
+Templates are automatically available to agents. When a playbook or task calls for a specific output format, the agent references the matching template.
 
 You can also request a template in chat:
 > "Write a security audit report for the auth module using the Security Audit template"

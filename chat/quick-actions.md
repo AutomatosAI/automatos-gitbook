@@ -6,7 +6,7 @@ description: Shortcut buttons in the chat interface for common tasks.
 
 Quick actions appear as buttons below the chat input. They provide fast access to common tasks without typing.
 
-<!-- IMAGE: Quick actions bar showing Code, Create an Agent, Knowledge Base, Recipes, Edit Tools -->
+<!-- IMAGE: Quick actions bar showing Code, Create an Agent, Knowledge Base, Playbooks, Edit Tools -->
 
 ## Available actions
 
@@ -25,9 +25,9 @@ Focuses the conversation on your uploaded documents. Great for asking questions 
 - "What does section 3.2 say about authentication?"
 - "Find all references to rate limiting"
 
-### Recipes
+### Playbooks
 
-Browse and trigger multi-step workflow recipes. Recipes coordinate multiple agents to complete complex tasks in sequence.
+Browse and trigger multi-step workflow playbooks. Playbooks coordinate multiple agents to complete complex tasks in sequence.
 
 ### Edit Tools
 

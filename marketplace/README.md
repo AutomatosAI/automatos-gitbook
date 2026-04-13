@@ -1,10 +1,10 @@
 ---
-description: Discover and install agents, recipes, tools, LLMs, and capabilities.
+description: Discover and install agents, playbooks, tools, LLMs, and capabilities.
 ---
 
 # Marketplace
 
-The Community Marketplace is where you discover, browse, and install extensions for your workspace — applications, pre-built agents, recipes, LLM models, and capability packages.
+The Community Marketplace is where you discover, browse, and install extensions for your workspace — applications, pre-built agents, playbooks, LLM models, and capability packages.
 
 <!-- IMAGE: Marketplace page showing Applications tab with stats bar and app grid -->
 
@@ -33,10 +33,10 @@ Pre-built agent configurations you can install into your workspace. Each comes w
 [Full guide →](agents.md)
 {% endtab %}
 
-{% tab title="Recipes" %}
+{% tab title="Playbooks" %}
 Ready-made workflows you can install and run immediately. Multi-step automations built by the community.
 
-[Full guide →](recipes.md)
+[Full guide →](playbooks.md)
 {% endtab %}
 
 {% tab title="LLMs" %}
@@ -69,9 +69,9 @@ Use the search bar to find items by name, description, or category across all ta
 
 ## Publishing to the marketplace
 
-Share your agents, recipes, and plugins with the community:
+Share your agents, playbooks, and plugins with the community:
 
-1. Go to the item you want to publish (agent, recipe, or plugin)
+1. Go to the item you want to publish (agent, playbook, or plugin)
 2. Click **Submit to Marketplace**
 3. Add a description, category, and tags
 4. Submit for review

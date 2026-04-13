@@ -69,12 +69,12 @@ Attach files when creating a mission to give agents additional context:
 
 ## Saving as a routine
 
-Completed missions can be converted into reusable recipe templates:
+Completed missions can be converted into reusable playbook templates:
 
 1. Open a completed mission
 2. Click **Save as Routine**
-3. The system extracts the task pattern into a recipe
-4. Run the recipe on demand or schedule it
+3. The system extracts the task pattern into a playbook
+4. Run the playbook on demand or schedule it
 
 This is great for turning one-off objectives into repeatable workflows.
 
@@ -93,5 +93,5 @@ Mission statistics (total count, success rates, average duration) are available 
 ## Related
 
 - [Dashboard](dashboard.md) — see active missions alongside other workspace activity
-- [Recipes](../agents/recipes.md) — reusable workflows that missions can be converted into
-- [Analytics → Workflows](../analytics/workflows.md) — mission and recipe performance metrics
+- [Playbooks](../agents/playbooks.md) — reusable workflows that missions can be converted into
+- [Analytics → Workflows](../analytics/workflows.md) — mission and playbook performance metrics

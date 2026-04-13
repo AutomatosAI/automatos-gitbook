@@ -81,7 +81,7 @@ Every LLM call is tracked with:
 - **Agent** — which agent made the request
 - **Estimated cost** — calculated from the model's per-token pricing
 
-This granularity lets you trace costs back to specific conversations, recipes, or missions.
+This granularity lets you trace costs back to specific conversations, playbooks, or missions.
 
 ## Exporting cost data
 

@@ -60,7 +60,7 @@ Below the chat input, you'll see shortcut buttons:
 | **Code** | Start a coding task — routes to your code-focused agents |
 | **Create an Agent** | Jump to agent creation without leaving chat |
 | **Knowledge Base** | Ask questions about your uploaded documents |
-| **Recipes** | Browse and run multi-step workflows |
+| **Playbooks** | Browse and run multi-step workflows |
 | **Edit Tools** | Manage tool assignments for your agents |
 
 ## What to try first
@@ -75,7 +75,7 @@ Below the chat input, you'll see shortcut buttons:
 > "What did Sentinel find in today's audit?"
 
 **Run a workflow:**
-> "Run the nightly test suite recipe"
+> "Run the nightly test suite playbook"
 
 ### Switching agents mid-conversation
 

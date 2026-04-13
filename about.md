@@ -50,7 +50,7 @@ flowchart LR
 | --- | --- |
 | **Agent** | An AI worker with a model, persona, tools, and skills |
 | **Workspace** | An isolated environment for a team — agents, data, and config are scoped to it |
-| **Recipe** | A multi-step workflow that coordinates multiple agents |
+| **Playbook** | A multi-step workflow that coordinates multiple agents |
 | **Plugin** | A marketplace-distributed package of skills, commands, and agent configs |
 | **Skill** | A git-based capability loaded into an agent from a repository |
 | **Tool** | An external app integration (GitHub, Slack, Jira) via Composio |

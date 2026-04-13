@@ -35,10 +35,10 @@ Manage how agents work together — team assignments, delegation rules, and inte
 [Full guide →](coordination.md)
 {% endtab %}
 
-{% tab title="Recipes" %}
-Multi-step workflows that chain agents together. Create, edit, and manage recipes that coordinate multiple agents to complete complex tasks.
+{% tab title="Playbooks" %}
+Multi-step workflows that chain agents together. Create, edit, and manage playbooks that coordinate multiple agents to complete complex tasks.
 
-[Full guide →](recipes.md)
+[Full guide →](playbooks.md)
 {% endtab %}
 {% endtabs %}
 
@@ -84,4 +84,4 @@ Start with a template. You can always customise the agent later from the [Agent 
 | [Agent Details](details.md) | The per-agent detail panel (Overview, Performance, Plugins, Reports) |
 | [Configuration](configuration.md) | Global agent configuration |
 | [Coordination](coordination.md) | Multi-agent teamwork settings |
-| [Recipes](recipes.md) | Creating and managing multi-step workflows |
+| [Playbooks](playbooks.md) | Creating and managing multi-step workflows |

@@ -33,7 +33,7 @@ Per-agent analytics:
 {% endtab %}
 
 {% tab title="Workflows" %}
-Recipe and workflow execution analytics:
+Playbook and workflow execution analytics:
 - Completion rates
 - Average duration
 - Step-level timing breakdown

@@ -25,7 +25,7 @@ Example scheduled items:
 <!-- IMAGE: Schedule section showing weekly calendar and upcoming tasks list -->
 
 {% hint style="info" %}
-Scheduled routines are created through [Recipes](../agents/recipes.md) with cron triggers. Click any item to view or edit the schedule.
+Scheduled routines are created through [Playbooks](../agents/playbooks.md) with cron triggers. Click any item to view or edit the schedule.
 {% endhint %}
 
 ## Active Now

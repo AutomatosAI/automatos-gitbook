@@ -1,10 +1,10 @@
 ---
-description: Recipe and workflow execution analytics.
+description: Playbook and workflow execution analytics.
 ---
 
 # Workflow Analytics
 
-The Workflows tab tracks recipe execution performance.
+The Workflows tab tracks playbook execution performance.
 
 <!-- IMAGE: Workflow Analytics showing execution history and duration charts -->
 
@@ -12,15 +12,15 @@ The Workflows tab tracks recipe execution performance.
 
 | Metric | Description |
 | --- | --- |
-| **Total Runs** | Number of recipe executions |
+| **Total Runs** | Number of playbook executions |
 | **Completion Rate** | Percentage that finished all steps |
 | **Avg Duration** | Mean end-to-end execution time |
 | **Failure Rate** | Percentage of failed executions |
 
 ## Execution history
 
-A table of recent recipe runs:
-- Recipe name
+A table of recent playbook runs:
+- Playbook name
 - Start time and duration
 - Status (completed, failed, in-progress)
 - Step progress (e.g., 4/5 steps completed)
@@ -37,7 +37,7 @@ Drill into a specific run to see:
 ## Trends
 
 - **Executions over time** — line chart
-- **Duration trends** — are recipes getting faster or slower?
+- **Duration trends** — are playbooks getting faster or slower?
 - **Failure patterns** — which steps fail most often?
 
 {% hint style="info" %}
