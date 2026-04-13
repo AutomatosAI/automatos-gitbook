@@ -29,3 +29,11 @@ Agent memory persists across conversations. Even in a new chat, agents can recal
 - **Conversations are workspace-scoped** — team members see only their own chat history
 - **Long conversations** may be summarised automatically to preserve context window space
 - **Agent responses** show which agent handled each message, so you can trace routing decisions
+
+## Feedback and ratings
+
+After any agent response, you can provide feedback:
+- **Upvote/Downvote** — helps the system learn which agents give good answers
+- **Corrections** — if the wrong agent responded, correct the routing
+
+Feedback is used by the Universal Router to improve future message routing.

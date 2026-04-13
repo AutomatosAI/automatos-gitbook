@@ -67,6 +67,17 @@ Plugins and skills that extend agent functionality:
 
 Use the search bar to find items by name, description, or category across all tabs.
 
+## Publishing to the marketplace
+
+Share your agents, recipes, and plugins with the community:
+
+1. Go to the item you want to publish (agent, recipe, or plugin)
+2. Click **Submit to Marketplace**
+3. Add a description, category, and tags
+4. Submit for review
+
+Published items are available to all Automatos users. Your workspace name appears as the publisher.
+
 {% hint style="info" %}
 The marketplace is community-driven. Installed items are scoped to your workspace and don't affect other users.
 {% endhint %}

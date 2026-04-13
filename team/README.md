@@ -44,3 +44,20 @@ Each workspace is fully isolated:
 | --- | --- |
 | [Inviting Members](inviting.md) | How to add people to your workspace |
 | [Roles & Permissions](roles.md) | What each role can do |
+
+## Authentication
+
+Automatos uses **Clerk** for authentication, providing:
+- Email/password login
+- Social login (Google, GitHub)
+- Multi-factor authentication (MFA)
+- Session management
+
+## Workspace isolation
+
+Each workspace is fully isolated:
+- Agents, documents, tools, and settings are workspace-scoped
+- Team members only see data within their workspace
+- Cross-workspace access is not supported
+
+This ensures data privacy between teams even on the same Automatos instance.

@@ -63,6 +63,36 @@ Log of all database queries executed:
 {% endtab %}
 {% endtabs %}
 
+## NL2SQL benchmarking
+
+Track how well the natural language to SQL system performs:
+
+1. Add **Golden SQL** examples — verified correct query/answer pairs
+2. Run benchmarks against the golden set to measure accuracy
+3. View accuracy trends over time to see if training is improving results
+
+Go to **Knowledge Bases → Database → Training** to add training examples and golden SQL pairs.
+
+### Query templates
+
+The platform ships with 20+ pre-built query templates per database type. These cover common operations like:
+- Active agent counts and performance summaries
+- Document processing statistics
+- Workflow execution history
+- Token usage and cost analytics
+
+Click a template to run it, or customise the SQL before executing.
+
+### Query audit
+
+Every database query (whether from a user or agent) is logged with:
+- The natural language question (if applicable)
+- The generated SQL
+- Execution time and row count
+- Who ran it
+
+This audit trail is available in the **Audit History** sub-tab.
+
 {% hint style="warning" %}
 SQL queries execute with read-only access by default. Write operations require explicit permission in Settings.
 {% endhint %}

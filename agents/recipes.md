@@ -62,3 +62,19 @@ Active recipe runs appear in:
 {% hint style="info" %}
 Recipe execution uses a scratchpad for intermediate state. Each step can read the previous step's output through the workflow pipeline.
 {% endhint %}
+
+## Webhook triggers
+
+Recipes can be triggered automatically by external events:
+
+| Trigger | Source | Example |
+| --- | --- | --- |
+| **Jira** | Issue created or updated | Run a triage recipe when a bug is filed |
+| **GitHub** | Push, PR, or issue event | Run code review on every pull request |
+| **Slack** | Message in a channel | Run a research recipe when tagged |
+
+Set up webhook triggers in the recipe's trigger configuration. The platform automatically registers the webhook URL with the external service.
+
+## Saving missions as recipes
+
+Completed missions can be saved as reusable recipe templates. From the mission detail page, click **Save as Routine** to extract the task pattern into a recipe that can be re-run on demand or on schedule.

@@ -66,6 +66,16 @@ Reports are generated automatically when agents complete scheduled tasks, or man
 {% endtab %}
 {% endtabs %}
 
+### Model usage stats
+
+The Performance tab also shows token usage and cost data for this specific agent:
+- **Input tokens** — total tokens sent to the LLM
+- **Output tokens** — total tokens generated
+- **Estimated cost** — calculated from the model's per-token pricing
+- **Requests** — total API calls made
+
+This helps you identify which agents are expensive and optimise accordingly. See [Analytics → LLM & Costs](../analytics/llm-costs.md) for workspace-wide cost analysis.
+
 ## Editing an agent
 
 From the Overview tab, click **Edit** to modify:

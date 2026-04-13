@@ -71,3 +71,24 @@ Cost projections are estimates based on recent usage. Actual costs depend on usa
 2. **Monitor the Top Spender card** — investigate if one agent dominates costs
 3. **Check token efficiency** — agents with low efficiency may need prompt optimisation
 4. **Set cost alerts** — configure budget thresholds in Settings
+
+## Token tracking details
+
+Every LLM call is tracked with:
+- **Input tokens** — the prompt sent to the model
+- **Output tokens** — the model's response
+- **Model** — which specific model was used
+- **Agent** — which agent made the request
+- **Estimated cost** — calculated from the model's per-token pricing
+
+This granularity lets you trace costs back to specific conversations, recipes, or missions.
+
+## Exporting cost data
+
+Cost data can be exported for external analysis. Use the **API** to pull cost records programmatically:
+
+```http
+GET /api/analytics/costs?start_date=2026-01-01&end_date=2026-03-31
+```
+
+See the [API Reference](../api-reference.md) for full endpoint details.

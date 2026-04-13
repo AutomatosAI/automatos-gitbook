@@ -36,3 +36,19 @@ Manage the available agent categories (code_architect, security_expert, data_ana
 - Organising the roster
 - Routing decisions
 - Analytics grouping
+
+## Orchestrator soul
+
+The orchestrator soul defines the overarching personality and behaviour of your entire agent fleet. It sets:
+- **Global tone** — professional, casual, or technical
+- **Safety boundaries** — what agents are not allowed to do
+- **Response guidelines** — length, formatting, and style rules
+
+This is applied as a base layer to every agent's system prompt. Individual agent prompts are appended after and can override specific behaviours.
+
+## Heartbeat settings
+
+Configure the heartbeat mode — periodic background tasks that agents run independently:
+- **Interval** — how often agents check for scheduled work
+- **Scope** — which agents participate in heartbeat cycles
+- **Context** — heartbeat mode uses minimal context (no conversation history) to keep costs low

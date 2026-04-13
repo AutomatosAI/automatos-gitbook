@@ -56,3 +56,8 @@ flowchart LR
 | **Tool** | An external app integration (GitHub, Slack, Jira) via Composio |
 | **Knowledge Base** | A collection of documents indexed for semantic search (RAG) |
 | **Universal Router** | The system that automatically sends messages to the right agent |
+| **Mission** | An autonomous, multi-step objective that agents plan and execute independently |
+| **Channel** | An external messaging platform (Telegram, Slack, WhatsApp) connected to your workspace |
+| **Knowledge Graph** | An auto-extracted network of entities and relationships from your documents |
+| **Memory** | Persistent agent memory — short-term (session) and long-term (cross-conversation) |
+| **Voice Chat** | Speak to agents and hear responses via speech-to-text and text-to-speech |

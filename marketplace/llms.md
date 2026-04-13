@@ -35,6 +35,16 @@ Models are assigned to agents during [agent creation](../agents/creating.md) or 
 OpenRouter is the default provider and gives you access to most models through a single API key. Configure your API key in [Settings → Credentials](../settings/credentials.md).
 {% endhint %}
 
+## OpenRouter marketplace
+
+Browse the full catalog of models available through OpenRouter. The marketplace shows:
+- Model name and provider
+- Context window size
+- Pricing (per million tokens — input and output)
+- Capabilities (chat, code, vision, etc.)
+
+Use this to compare models before setting them in your agent or workspace configuration.
+
 ## Cost considerations
 
 Track actual model costs in [Analytics → LLM & Costs](../analytics/llm-costs.md). The marketplace shows list pricing — your actual costs depend on usage volume and provider agreements.

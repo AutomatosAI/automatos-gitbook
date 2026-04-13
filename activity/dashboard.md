@@ -61,3 +61,7 @@ Use the time range selector (top right) to view activity for:
 - 1 Day (default)
 - 7 Days
 - 30 Days
+
+## Real-time updates
+
+The dashboard updates in real-time via Server-Sent Events (SSE). You don't need to refresh — new tasks, status changes, and agent reports appear automatically as they happen.

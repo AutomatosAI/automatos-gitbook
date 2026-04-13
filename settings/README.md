@@ -64,3 +64,11 @@ Complete record of system activity:
 | [API Keys & Credentials](credentials.md) | Managing secrets and API keys |
 | [Models](models.md) | LLM model configuration |
 | [Audit Logs](audit-logs.md) | Activity and security audit trail |
+
+## Channels and integrations
+
+Channel credentials (Telegram bot tokens, Slack app tokens, etc.) are managed in the Credentials section. Integration tokens are stored with masked display — you can see the connection status without exposing the full secret.
+
+## BYOK — Bring Your Own Key
+
+Users can provide their own API keys for LLM providers instead of using the workspace default. This is useful for teams where individuals have their own API accounts. Configure BYOK preferences in General settings.

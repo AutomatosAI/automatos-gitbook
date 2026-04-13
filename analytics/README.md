@@ -86,3 +86,16 @@ All analytics tabs support time range filtering:
 {% hint style="info" %}
 Analytics data refreshes periodically. Click **Refresh** for the latest numbers.
 {% endhint %}
+
+## Enhanced real-time analytics
+
+The analytics dashboard includes advanced metrics updated in real-time:
+
+| Metric | Description |
+| --- | --- |
+| **System load trend** | 24-hour system utilisation with colour coding (green/yellow/red) |
+| **Cost per execution** | Calculated from actual LLM usage data, not estimates |
+| **Predictive capacity alerts** | Early warnings when you're approaching resource limits |
+| **Resource bottleneck detection** | Identifies which component is slowing things down, with recommendations |
+
+These metrics are available on the Overview tab and refresh automatically.

@@ -28,3 +28,15 @@ Each marketplace recipe includes:
 {% hint style="info" %}
 Recipes reference agent roles (e.g., "code reviewer"), not specific agents. The platform maps roles to your existing agents on install.
 {% endhint %}
+
+## Installing a recipe
+
+1. Browse or search the Recipes tab
+2. Click a recipe card to see details
+3. Click **Install**
+4. The recipe is copied to your workspace's recipe library
+5. If the recipe references specific agent roles, you may need to map them to your own agents
+
+{% hint style="info" %}
+Installed recipes are independent copies. Updates to the marketplace version don't automatically update your installed copy.
+{% endhint %}

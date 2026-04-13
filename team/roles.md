@@ -42,3 +42,13 @@ These pages and tabs are only visible to admins:
 - **Settings** — system configuration, credentials, audit logs
 - **Context Engineering** — RAG system tuning
 - **Analytics → Admin** — system-level metrics
+
+## Context Engineering role
+
+The **Context Engineering** permission allows users to:
+- Edit global system prompts
+- Modify the orchestrator soul and personality settings
+- Configure heartbeat parameters
+- Manage agent coordination rules
+
+This is a specialised role for team members responsible for tuning how agents behave across the workspace.

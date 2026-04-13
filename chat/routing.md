@@ -51,8 +51,21 @@ When you notice a response came from the wrong agent:
 2. Use the correction mechanism to reassign
 3. Future similar messages will route correctly
 
+## How routing decisions are stored
+
+Every routing decision is logged to a database table. This means:
+- The system builds a history of which agents handle which types of messages
+- Corrections you make feed directly into future routing
+- You can view routing patterns in **Analytics → Agents**
+
 ## Tips
 
 - **New agents** take a few interactions to get into the routing cache. Be patient.
 - **Specific keywords** in agent descriptions help the rule-based tier match faster.
 - **Semantic routing** works better when agents have detailed, distinct descriptions.
+
+## Channel routing
+
+The Universal Router also handles messages from external channels (Telegram, Slack, WhatsApp, etc.). Messages from all channels go through the same multi-tier routing system, ensuring consistent agent selection regardless of where the message originates.
+
+See [Tools → Connecting Apps](../tools/connecting-apps.md) for setting up channels.

@@ -45,3 +45,23 @@ Toggle feature flags:
 {% hint style="info" %}
 Changes to general settings take effect immediately. No restart required.
 {% endhint %}
+
+## Feature flags
+
+Feature flags control optional platform capabilities. Available flags:
+
+| Flag | Description |
+| --- | --- |
+| **Voice chat** | Enable/disable voice input and text-to-speech |
+| **Advanced analytics** | Enable predictive alerts and bottleneck detection |
+| **Knowledge graph** | Enable automatic entity extraction from documents |
+| **Mission mode** | Enable autonomous multi-step mission execution |
+
+Toggle flags from General settings. Changes take effect immediately.
+
+## Notification preferences
+
+Configure how and when you receive notifications:
+- **In-app** — badges and alerts within the Automatos interface
+- **Email** — summaries and critical alerts via email
+- **Channel** — notifications sent to connected channels (Slack, Telegram, etc.)

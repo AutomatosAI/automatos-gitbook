@@ -11,6 +11,7 @@
   * [Routing & Auto Mode](chat/routing.md)
   * [Quick Actions](chat/quick-actions.md)
   * [Chat History](chat/history.md)
+  * [Voice Chat](chat/voice.md)
 
 * [Agents](agents/README.md)
   * [Agent Roster](agents/roster.md)
@@ -31,6 +32,7 @@
   * [Connecting Apps](tools/connecting-apps.md)
   * [Assigning Tools to Agents](tools/assigning.md)
   * [Security](tools/security.md)
+  * [Channels](tools/channels.md)
 
 * [Knowledge Bases](knowledge/README.md)
   * [Documents](knowledge/documents.md)
@@ -38,6 +40,7 @@
   * [Database](knowledge/database.md)
   * [Templates](knowledge/templates.md)
   * [CodeGraph](knowledge/codegraph.md)
+  * [Knowledge Graph](knowledge/knowledge-graph.md)
 
 * [Marketplace](marketplace/README.md)
   * [Applications](marketplace/applications.md)

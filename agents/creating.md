@@ -75,3 +75,39 @@ You can always add or remove tools later from the [Agent Details](details.md) pa
 ## Step 6: Create
 
 Click **Create** to deploy your agent. It appears on the roster immediately and is ready to receive messages through Chat.
+
+## Testing your agent
+
+After creating an agent, test it before relying on it for production work:
+
+1. **Chat test** — open Chat, select your agent from the dropdown, and send a few messages. Check that it responds appropriately and uses its assigned tools.
+2. **Capability test** — from the Agent Details panel, click **Run Capability Test**. This runs a comprehensive evaluation and returns a scored report covering:
+   - Response quality
+   - Tool usage accuracy
+   - Persona adherence
+   - Error handling
+3. **Review routing** — send messages in Auto mode and check that the router correctly directs relevant queries to your new agent. If not, improve the agent's description.
+
+{% hint style="info" %}
+New agents take a few routing cycles to be picked up by the semantic and cache tiers. Give it 5-10 interactions before evaluating routing accuracy.
+{% endhint %}
+
+## Prompt engineering tips
+
+Your agent's system prompt is the single biggest factor in response quality. Follow these guidelines:
+
+### Be specific about the role
+Bad: "You are a helpful assistant"
+Good: "You are a senior TypeScript developer specialising in React performance optimisation. You review code for render bottlenecks, unnecessary re-renders, and bundle size issues."
+
+### Define output format
+Tell the agent how to structure responses: "Always list findings as numbered items with severity (HIGH/MEDIUM/LOW) and a one-line fix suggestion."
+
+### Set boundaries
+Specify what the agent should NOT do: "Do not suggest rewriting entire components. Focus on targeted fixes to the specific code provided."
+
+### Include examples
+Provide 1-2 example interactions showing the expected input and output. This dramatically improves consistency.
+
+### Reference tools explicitly
+If the agent has tools, mention them: "Use the GitHub tool to fetch pull request diffs before reviewing. Always check the latest commit, not just the PR description."

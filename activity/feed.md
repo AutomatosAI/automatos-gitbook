@@ -38,3 +38,25 @@ Filter the feed by:
 {% hint style="info" %}
 The feed updates in real-time via server-sent events (SSE). New entries appear at the top automatically.
 {% endhint %}
+
+## Feed event types
+
+The feed captures every platform action:
+
+| Event type | Example |
+| --- | --- |
+| **Chat message** | User sent a message, agent responded |
+| **Tool call** | Agent called GitHub API to fetch a PR |
+| **Recipe step** | Step 3 of "Nightly Review" completed |
+| **Mission update** | Mission "API Audit" task 2 marked complete |
+| **Memory stored** | Agent saved a new fact to long-term memory |
+| **Report generated** | Sentinel generated a security standup report |
+| **Routing decision** | Universal Router selected Code Reviewer for a message |
+
+### Filtering the feed
+
+Use the filter controls at the top to narrow down:
+- By agent
+- By event type
+- By time range
+- By keyword search

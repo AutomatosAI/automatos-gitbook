@@ -44,6 +44,24 @@ When you ask a code question in Chat, the agent:
 
 This is especially powerful for large codebases where agents need to understand relationships between components.
 
+## Entity extraction
+
+CodeGraph doesn't just index symbols — it also extracts semantic entities:
+- API endpoints and their parameters
+- Configuration keys and their usage
+- Business logic patterns
+- Error handling flows
+
+These entities feed into the broader Knowledge Graph, connecting your code knowledge with your document knowledge.
+
+## Re-indexing
+
+CodeGraph re-indexes in two ways:
+- **Automatic** — when new commits are pushed to connected GitHub repositories
+- **Manual** — click **Re-index** to trigger a full rebuild
+
+Indexing runs in the background. You can continue using the platform while it processes.
+
 {% hint style="info" %}
 CodeGraph re-indexes automatically when new commits are pushed to connected repositories (if GitHub integration is active).
 {% endhint %}

@@ -48,3 +48,28 @@ Deleting a memory is permanent. The agent will no longer recall that information
 Each agent has its own memory scope, plus access to workspace-level shared memories. This means:
 - Sentinel's security findings don't clutter Code Reviewer's memory
 - Shared knowledge (project context, team preferences) is available to all agents
+
+## Memory architecture
+
+The memory system has two tiers:
+
+| Tier | Name | What it stores | Retention |
+| --- | --- | --- | --- |
+| **L2** | Short-term memory | Recent conversation context, active task state | Session-scoped, stored in PostgreSQL |
+| **L3** | Long-term memory | Important facts, decisions, user preferences, cross-conversation learnings | Persistent, survives across sessions |
+
+### How memories are created
+
+Agents automatically extract and store important information during conversations and task execution. The system identifies:
+- Key decisions and their rationale
+- User preferences and corrections
+- Task outcomes and findings
+- Cross-agent shared knowledge
+
+### Memory consolidation
+
+The platform periodically consolidates memories — merging related facts, removing duplicates, and strengthening frequently-recalled information. This happens automatically as part of the session lifecycle.
+
+### Memory augmentation
+
+Agents can be instructed to store specific knowledge via the memory API. External data (from tools, documents, or manual input) can also be injected into the memory system.

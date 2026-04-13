@@ -80,3 +80,4 @@ Documents are automatically chunked using semantic boundaries and embedded for v
 | [Database](database.md) | SQL Explorer and semantic querying |
 | [Templates](templates.md) | Document templates |
 | [CodeGraph](codegraph.md) | Code repository indexing |
+| [Knowledge Graph](knowledge-graph.md) | Entity relationships and graph-enhanced search |

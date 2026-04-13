@@ -56,6 +56,27 @@ Tools are powered by **Composio**, which provides 500+ pre-built integrations wi
 You don't need to connect everything upfront. Start with the tools your agents need most (GitHub, Slack, etc.) and add more as needed.
 {% endhint %}
 
+## Webhook triggers
+
+Some tools support automatic triggers — events in external services that kick off actions in Automatos:
+
+| Service | Trigger examples |
+| --- | --- |
+| **Jira** | Issue created, issue updated, sprint started |
+| **GitHub** | Push to branch, PR opened, issue filed |
+| **Slack** | Message posted, reaction added |
+
+Triggers are configured per-recipe. When an event fires, the associated recipe runs automatically. See [Recipes](../agents/recipes.md) for setup details.
+
+## Cron scheduling
+
+Schedule recurring tasks using cron expressions. Any recipe can be set to run on a schedule — daily reports, weekly audits, hourly monitoring checks.
+
+Configure schedules in the recipe's trigger settings. Common patterns:
+- `0 9 * * 1-5` — weekdays at 9 AM
+- `0 */6 * * *` — every 6 hours
+- `0 22 * * 0` — Sundays at 10 PM
+
 ## Subpages
 
 | Page | Description |
@@ -63,3 +84,4 @@ You don't need to connect everything upfront. Start with the tools your agents n
 | [Connecting Apps](connecting-apps.md) | How to authenticate and connect a new tool |
 | [Assigning Tools to Agents](assigning.md) | Give agents access to specific tools |
 | [Security](security.md) | Tool connection security and permissions |
+| [Channels](channels.md) | Connect messaging platforms like Telegram, Slack, and WhatsApp |

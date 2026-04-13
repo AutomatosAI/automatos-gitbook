@@ -49,3 +49,23 @@ Filter reports by:
 - **Date range** — narrow to a time period
 - **Status** — unread, reviewed, graded
 - **Type** — routine, task completion, incident
+
+## How agents generate reports
+
+Agents create reports in two ways:
+
+1. **Automatic** — when an agent completes a scheduled recipe or heartbeat task, it generates a standup report summarising what it found, what it did, and any issues requiring attention
+2. **Manual** — agents can be asked to generate a report via chat: "Write a report on today's security findings"
+
+### Report contents
+
+A typical agent report includes:
+- **Summary** — one-paragraph overview of what was done
+- **Findings** — detailed list of results, issues, or observations
+- **Actions taken** — what the agent did (tool calls, code changes, etc.)
+- **Recommendations** — suggested next steps for the user
+- **Linked artifacts** — files, code snippets, or external references
+
+### Grading reports
+
+Each report can be graded for quality. This feedback helps the system improve future report generation. Grades are visible in the Agent Details → Reports tab.

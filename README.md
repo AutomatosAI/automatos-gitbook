@@ -21,6 +21,11 @@ Automatos AI is a platform for building, deploying, and managing autonomous AI a
 | Add team members | [Team Management](team/README.md) |
 | Track costs and performance | [Analytics](analytics/README.md) |
 | Configure the platform | [Settings](settings/README.md) |
+| Connect Telegram, Slack, WhatsApp | [Channels](tools/channels.md) |
+| Use voice chat | [Voice Chat](chat/voice.md) |
+| Run autonomous missions | [Missions](activity/missions.md) |
+| Explore the knowledge graph | [Knowledge Graph](knowledge/knowledge-graph.md) |
+| Use the REST API | [API Reference](api-reference.md) |
 
 ## Quick start
 

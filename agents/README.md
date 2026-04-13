@@ -63,6 +63,14 @@ At the top of the page, four metric cards give you an at-a-glance view:
 
 Your agent appears on the roster immediately and is ready to receive messages.
 
+### Batch agent creation
+
+Need multiple agents? Use the batch creation feature to create several agents at once. Click **+ Create Agent** and toggle to **Batch Mode** to define multiple agents in a single session.
+
+### Starter agents
+
+New workspaces come with 10 pre-configured starter agents covering common roles: Code Reviewer, QA Engineer, Sentinel (security), Scribe (documentation), Scout (research), Comms (communication), and more. These are ready to use immediately — customise them or create your own.
+
 {% hint style="success" %}
 Start with a template. You can always customise the agent later from the [Agent Details](details.md) panel.
 {% endhint %}
