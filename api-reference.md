@@ -256,7 +256,7 @@ Response: Server-Sent Events stream
 data: {"type": "token", "content": "I'll review the login"}
 data: {"type": "token", "content": " component for XSS..."}
 data: {"type": "tool_call", "name": "github_get_file", "args": {"path": "src/login.tsx"}}
-data: {"type": "done", "agent": "Sentinel", "tokens": {"input": 1234, "output": 567}}
+data: {"type": "done", "agent": "Auto", "tokens": {"input": 1234, "output": 567}}
 ```
 
 ### Create an agent

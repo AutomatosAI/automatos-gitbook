@@ -42,9 +42,9 @@ When an agent receives a task it can't fully handle alone:
 4. The delegated agent completes the work and returns results
 5. The original agent incorporates the results into its response
 
-### Example: Code review with security
+### Example: an announcement with an image
 
-You ask Code Reviewer to review a pull request. It notices authentication changes and delegates a security review to Sentinel. Sentinel checks for vulnerabilities and passes findings back. Code Reviewer includes both code quality and security findings in the final response.
+You ask Auto for a product announcement with an image. Auto drafts the copy and delegates the image to the Brand Designer. The Brand Designer creates the image and passes it back. Auto includes both the copy and the image in its final response.
 
 ## Knowledge sharing between agents
 

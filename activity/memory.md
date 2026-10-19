@@ -46,7 +46,7 @@ Deleting a memory is permanent. The agent will no longer recall that information
 ## Memory per agent
 
 Each agent has its own memory scope, plus access to workspace-level shared memories. This means:
-- Sentinel's security findings don't clutter Code Reviewer's memory
+- The Researcher's notes don't clutter the Brand Designer's memory
 - Shared knowledge (project context, team preferences) is available to all agents
 
 ## Memory architecture

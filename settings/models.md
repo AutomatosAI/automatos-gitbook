@@ -14,7 +14,7 @@ Set up each LLM provider:
 
 {% tabs %}
 {% tab title="OpenRouter" %}
-OpenRouter gives access to 100+ models from all major providers through a single API key.
+OpenRouter gives access to 400+ models from all major providers through a single API key.
 
 - **API Key** — set in [Credentials](credentials.md)
 - **Base URL** — `https://openrouter.ai/api/v1` (default)

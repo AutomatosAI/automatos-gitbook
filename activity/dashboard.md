@@ -16,16 +16,16 @@ A weekly calendar view showing:
 - Upcoming schedule listed chronologically below
 
 Example scheduled items:
-- `23:45` — Sentinel Routine
-- `08:00` — Comms Routine
+- `23:45` — Brand Designer Routine
+- `08:00` — Social Media Director Routine
 - `20:00` — Nightly Self-Test Suite
 - `06:00` — API Health Check & Regression Detector
-- `09:00` — QA Engineer Routine
+- `09:00` — Researcher Routine
 
 <!-- IMAGE: Schedule section showing weekly calendar and upcoming tasks list -->
 
 {% hint style="info" %}
-Scheduled routines are created through [Playbooks](../agents/playbooks.md) with cron triggers. Click any item to view or edit the schedule.
+An item named after an agent, such as "Brand Designer Routine", is that agent's heartbeat: turn it on in the agent's heartbeat settings. Other items are scheduled [Playbooks](../agents/playbooks.md), missions and tasks.
 {% endhint %}
 
 ## Active Now

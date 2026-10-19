@@ -14,7 +14,7 @@ Each card displays:
 
 | Field | Description |
 | --- | --- |
-| **Name** | The agent's display name (e.g., Code Reviewer, Sentinel) |
+| **Name** | The agent's display name (e.g., Auto, Brand Designer) |
 | **Category** | Agent type — custom, support, code_architect, etc. |
 | **Model** | The LLM model this agent uses (shown as a badge) |
 | **Success Rate** | Percentage of tasks completed successfully |

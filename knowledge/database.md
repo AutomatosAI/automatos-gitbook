@@ -28,13 +28,7 @@ Example: "How many agents are active?" maps to `SELECT COUNT(*) FROM agents WHER
 {% endtab %}
 
 {% tab title="Query Templates" %}
-Pre-built query templates for common operations:
-- Agent performance summaries
-- Document processing statistics
-- Workflow execution history
-- Usage analytics
-
-Click a template to run it instantly or customise it first.
+A library of saved SQL query templates for your database type. Search the library, open a template to see its SQL and parameters, fill in the parameters and click **Execute Query**.
 {% endtab %}
 
 {% tab title="Training" %}
@@ -75,13 +69,7 @@ Go to **Knowledge Bases → Database → Training** to add training examples and
 
 ### Query templates
 
-The platform ships with 20+ pre-built query templates per database type. These cover common operations like:
-- Active agent counts and performance summaries
-- Document processing statistics
-- Workflow execution history
-- Token usage and cost analytics
-
-Click a template to run it, or customise the SQL before executing.
+The Query Templates library lists the templates available for your database type. If none have been added yet, the library is empty. When you run a template, its SQL is checked first and only read-only SELECT queries are executed.
 
 ### Query audit
 

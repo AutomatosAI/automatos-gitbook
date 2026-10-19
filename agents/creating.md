@@ -4,77 +4,64 @@ description: Step-by-step guide to creating a new agent.
 
 # Creating an Agent
 
-Click **+ Create Agent** from the Agent Management page to open the creation dialog.
+Click **+ Create Agent** from the Agent Management page to open the creation dialog. It has five steps: **Config**, **Persona**, **Model**, **Tools** and **Capabilities**. Use **Next** and **Previous** to move between them.
 
-## Step 1: Choose a starting point
+{% hint style="info" %}
+There are no agent templates in this dialog. To start from a ready-made agent, install one from the [Marketplace](../marketplace/agents.md) and customise it.
+{% endhint %}
 
-{% tabs %}
-{% tab title="From Template" %}
-Pick a pre-built template to get started fast. Templates come with sensible defaults for model, persona, tools, and system prompt.
-
-Available templates include:
-- **Code Reviewer** — reviews pull requests and code quality
-- **QA Engineer** — runs tests and validates functionality
-- **Sentinel** — security monitoring and auditing
-- **Scribe** — documentation and report writing
-- **Scout** — research and information gathering
-- **Comms** — handles communication and email workflows
-
-<!-- IMAGE: Template selection grid in the create agent dialog -->
-{% endtab %}
-
-{% tab title="From Scratch" %}
-Start with a blank agent. You'll configure everything manually — useful when you need a custom specialist that doesn't match any template.
-{% endtab %}
-{% endtabs %}
-
-## Step 2: Basic information
+## Step 1: Config
 
 | Field | Required | Description |
 | --- | --- | --- |
-| **Name** | Yes | A display name for the agent |
-| **Category** | Yes | The agent's type (custom, support, code_architect, etc.) |
+| **Category** | Yes | The kind of work the agent does: Analytics, Business, Communication, Design, Development, Education, General, HR, Legal, Marketing, Productivity, Research, Sales, Support, Writing or Custom |
+| **Agent Name** | Yes | A display name for the agent |
 | **Description** | Recommended | What the agent does — used by the router for matching |
+| **Tags** | No | Comma-separated keywords that describe the agent's strengths |
+| **Share to Marketplace** | No | Submits the agent to the marketplace approval queue with the same name, description, category and tags |
 
 {% hint style="info" %}
 Write a clear, specific description. The Universal Router uses it to decide when to send messages to this agent. "Handles code reviews for JavaScript and TypeScript" is better than "Code stuff".
 {% endhint %}
 
-## Step 3: Model selection
+## Step 2: Persona
 
-Choose which LLM powers this agent:
+A persona sets the agent's personality, voice and working style. Choose one of three options:
+
+- **No Persona** — default behaviour
+- **Predefined** — pick a persona preset. The list shows the presets that match the category you chose in step 1 (choose the Custom category to see them all). The built-in presets are Senior Engineer, Code Reviewer, DevOps / SRE Engineer, Content Strategist, SEO Specialist, Sales Development Representative, Account Executive, Customer Success Manager, Technical Support Engineer and Customer Advocate, plus any personas your workspace has added.
+- **Custom** — write your own persona prompt. If you selected a preset first, its prompt is filled in as a starting point.
+
+<!-- IMAGE: Persona step in the create agent dialog -->
+
+## Step 3: Model
+
+Choose which model powers this agent and tune its parameters:
 
 | Setting | Description |
 | --- | --- |
-| **Provider** | OpenRouter, OpenAI, Anthropic, or DeepSeek |
-| **Model** | The specific model ID (e.g., claude-sonnet-4-20250514, gpt-4, deepseek-chat) |
-| **Temperature** | Controls creativity (0 = deterministic, 1 = creative) |
-| **Max tokens** | Maximum response length |
+| **Runtime** (local edition only) | Where the agent runs: an API model, or your own Claude Code / CLI session |
+| **Model** | The model, and the provider that serves it |
+| **Temperature** | Controls creativity (0 = deterministic, higher = more creative) |
+| **Max Output Tokens** | Maximum response length |
+| **Top P**, **Frequency Penalty**, **Presence Penalty** | Advanced sampling settings |
+| **Fallback Model** | Optional model used if the main one is unavailable |
 
-<!-- IMAGE: Model selection dropdown showing available providers and models -->
+<!-- IMAGE: Model step showing the model selector and parameters -->
 
-## Step 4: Persona
+## Step 4: Tools
 
-Select a persona that defines the agent's communication style and personality:
-- **Professional** — formal, detailed responses
-- **Casual** — conversational and approachable
-- **Technical** — precise, code-focused responses
-- **Custom** — write your own persona description
+Choose the tools this agent can use, from the apps connected in [Tools & Integrations](../tools/README.md). If no tools are listed, connect an app there first.
 
-## Step 5: Tools and skills
+## Step 5: Capabilities
 
-Assign tools from your connected integrations:
-- **Tools** — apps like GitHub, Slack, Jira (via Composio)
-- **Skills** — git-based capability packages
-- **Plugins** — marketplace-installed bundles
+Choose the capabilities (plugins enabled for your workspace) that teach the agent new skills. If none are enabled yet, you can assign capabilities later.
+
+Click **Create Agent**. The agent appears on the roster immediately and is ready to receive messages through Chat.
 
 {% hint style="success" %}
-You can always add or remove tools later from the [Agent Details](details.md) panel.
+You can change these settings later from the [Agent Details](details.md) panel.
 {% endhint %}
-
-## Step 6: Create
-
-Click **Create** to deploy your agent. It appears on the roster immediately and is ready to receive messages through Chat.
 
 ## Testing your agent
 

@@ -29,17 +29,20 @@ Automatos AI is a platform for building, deploying, and managing autonomous AI a
 
 ## Quick start
 
-### 1. Sign in
+### 1. Get access
 
-Create your account or sign in with your workspace credentials. A personal workspace is created automatically on first login.
+- **Local edition (available today):** free and open source (Apache 2.0). Install it from [GitHub](https://github.com/AutomatosAI/automatos-ai) and run it on your own machine, on your own AI keys or your Claude Code / CLI subscription. No account or login is needed.
+- **Hosted Studio:** the hosted beta opens in November 2026. [Join the waitlist](https://studio.automatos.app/#waitlist). If you are already in the beta, sign in with your workspace credentials; your workspace is created on first sign-in.
 
-### 2. Create your first agent
+### 2. Meet your first agents
 
-Head to [Agents](agents/README.md) and click **+ Create Agent**. Pick a template like Code Reviewer or start from scratch.
+A new hosted workspace starts with Auto and a Brand Designer. Auto builds the rest of your team during onboarding, from a package or from scratch. A fresh local install starts with five agents: Auto, a Brand Designer and a starter team of Researcher, Writer and Analyst.
+
+To add your own, head to [Agents](agents/README.md) and click **+ Create Agent**. Pick a category, then choose a predefined persona (for example the Code Reviewer or Content Strategist persona), write your own, or skip the persona.
 
 ### 3. Give it tools
 
-Go to [Tools](tools/README.md) to connect apps like GitHub, Jira, or Slack. Assign them to your agent.
+Go to [Tools](tools/README.md) to connect apps like GitHub, Jira, or Slack (over 1,000 apps through Composio; on the local edition, bring your own Composio key). Assign them to your agent.
 
 ### 4. Add knowledge
 

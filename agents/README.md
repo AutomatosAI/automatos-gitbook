@@ -56,23 +56,22 @@ At the top of the page, four metric cards give you an at-a-glance view:
 ## Quick start: Create your first agent
 
 1. Click **+ Create Agent** in the top right
-2. Choose a template (Code Reviewer, QA Engineer, etc.) or start blank
-3. Set a name, select a model, and assign a persona
-4. Add tools and skills
-5. Click **Create**
+2. Pick a category and give the agent a name
+3. Choose a predefined persona (for example the Code Reviewer or Content Strategist persona), write your own, or skip it
+4. Select a model, then add tools and capabilities
+5. Click **Create Agent**
 
-Your agent appears on the roster immediately and is ready to receive messages.
+Your agent appears on the roster immediately and is ready to receive messages. See [Creating an Agent](creating.md) for each step.
 
-### Batch agent creation
+### Agents on day one
 
-Need multiple agents? Use the batch creation feature to create several agents at once. Click **+ Create Agent** and toggle to **Batch Mode** to define multiple agents in a single session.
+- **Hosted Studio:** a new hosted workspace starts with Auto and a Brand Designer. Auto builds the rest of your team during onboarding, from a package or from scratch.
+- **Local edition:** a fresh local install starts with five agents: Auto, a Brand Designer and a starter team of Researcher, Writer and Analyst.
 
-### Starter agents
-
-New workspaces come with 10 pre-configured starter agents covering common roles: Code Reviewer, QA Engineer, Sentinel (security), Scribe (documentation), Scout (research), Comms (communication), and more. These are ready to use immediately — customise them or create your own.
+The Studio marketplace has 100+ ready-made agents you can install. See [Marketplace Agents](../marketplace/agents.md).
 
 {% hint style="success" %}
-Start with a template. You can always customise the agent later from the [Agent Details](details.md) panel.
+Start from a predefined persona or a marketplace agent. You can always customise the agent later from the [Agent Details](details.md) panel.
 {% endhint %}
 
 ## Subpages

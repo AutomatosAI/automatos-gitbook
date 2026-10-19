@@ -55,7 +55,7 @@ At the top of the Dashboard tab, four cards summarise your workspace:
 | Card | What it shows |
 | --- | --- |
 | **Working Now** | Number of agents actively processing tasks |
-| **Channels Live** | Active communication channels (Slack, email, etc.) |
+| **Channels Live** | Connected chat channels (Telegram, Slack, Discord or WhatsApp) |
 | **Completed Today** | Total tasks finished in the last 24 hours |
 | **Needs Attention** | Items requiring your review or intervention |
 

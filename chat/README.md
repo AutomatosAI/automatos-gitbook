@@ -57,11 +57,13 @@ Below the chat input, you'll see shortcut buttons:
 
 | Action | What it does |
 | --- | --- |
-| **Code** | Start a coding task — routes to your code-focused agents |
-| **Create an Agent** | Jump to agent creation without leaving chat |
-| **Knowledge Base** | Ask questions about your uploaded documents |
-| **Playbooks** | Browse and run multi-step workflows |
-| **Edit Tools** | Manage tool assignments for your agents |
+| **Live** | Start a live voice conversation |
+| **Code** | Open the Code canvas on your workspace's files |
+| **Plan** | Plan mode: get a structured plan without taking any actions, then launch it as a Mission |
+| **Mission** | Open Missions to give your agents a goal |
+| **Pinned agents** | Send messages straight to an agent you've pinned |
+
+See [Quick Actions](quick-actions.md) for details.
 
 ## What to try first
 
@@ -72,7 +74,7 @@ Below the chat input, you'll see shortcut buttons:
 > "Review the login component for security issues"
 
 **Check on your agents:**
-> "What did Sentinel find in today's audit?"
+> "What did the Brand Designer work on today?"
 
 **Run a workflow:**
 > "Run the nightly test suite playbook"
