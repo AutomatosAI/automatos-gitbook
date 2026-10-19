@@ -47,9 +47,9 @@ flowchart LR
 | **Frontend** | Next.js 15, TypeScript, Tailwind CSS, shadcn/ui |
 | **Backend** | Python, FastAPI, SQLAlchemy, PostgreSQL, Redis |
 | **AI** | Multi-provider — OpenRouter, OpenAI, Anthropic, DeepSeek |
-| **Storage** | AWS S3 for documents, S3 Vectors for embeddings |
-| **Auth** | Clerk with full workspace isolation |
-| **Infra** | Docker, Railway |
+| **Storage** | Hosted: documents and vectors on AWS in Ireland (eu-west-1), using S3 and S3 Vectors. Local: MinIO and Postgres in your own stack |
+| **Auth** | Hosted: Clerk, with workspace isolation. Local: no login (one workspace, one operator) |
+| **Infra** | Docker; hosted on Railway |
 
 ## Key concepts
 

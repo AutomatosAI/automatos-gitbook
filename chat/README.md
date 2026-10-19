@@ -77,11 +77,11 @@ See [Quick Actions](quick-actions.md) for details.
 > "What did the Brand Designer work on today?"
 
 **Run a workflow:**
-> "Run the nightly test suite playbook"
+> "Run the Two-minute brief playbook on electric bikes"
 
 ### Switching agents mid-conversation
 
-You can switch to a different agent at any time during a conversation. Click the agent name in the chat header or use the Auto dropdown to pick a new agent. The new agent picks up the conversation context seamlessly.
+You can switch to a different agent at any time during a conversation. Click the agent name in the chat header or use the Auto dropdown to pick a new agent. The new agent picks up the conversation context.
 
 ### File attachments
 

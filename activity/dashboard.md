@@ -18,8 +18,7 @@ A weekly calendar view showing:
 Example scheduled items:
 - `23:45` — Brand Designer Routine
 - `08:00` — Social Media Director Routine
-- `20:00` — Nightly Self-Test Suite
-- `06:00` — API Health Check & Regression Detector
+- `20:00` — Two-minute brief (scheduled Playbook)
 - `09:00` — Researcher Routine
 
 <!-- IMAGE: Schedule section showing weekly calendar and upcoming tasks list -->

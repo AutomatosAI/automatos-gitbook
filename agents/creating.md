@@ -68,12 +68,7 @@ You can change these settings later from the [Agent Details](details.md) panel.
 After creating an agent, test it before relying on it for production work:
 
 1. **Chat test** — open Chat, select your agent from the dropdown, and send a few messages. Check that it responds appropriately and uses its assigned tools.
-2. **Capability test** — from the Agent Details panel, click **Run Capability Test**. This runs a comprehensive evaluation and returns a scored report covering:
-   - Response quality
-   - Tool usage accuracy
-   - Persona adherence
-   - Error handling
-3. **Review routing** — send messages in Auto mode and check that the router correctly directs relevant queries to your new agent. If not, improve the agent's description.
+2. **Review routing** — send messages in Auto mode and check that the router correctly directs relevant queries to your new agent. If not, improve the agent's description.
 
 {% hint style="info" %}
 New agents take a few routing cycles to be picked up by the semantic and cache tiers. Give it 5-10 interactions before evaluating routing accuracy.

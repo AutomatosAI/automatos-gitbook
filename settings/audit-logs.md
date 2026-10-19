@@ -40,7 +40,7 @@ Filter logs by:
 - **Search** — text search across log entries
 
 {% hint style="info" %}
-The workspace audit log, under **Command Centre → Governance → Audit** (workspace admins), keeps entries for a set retention period, never less than 180 days, and deletes older entries automatically. The local edition keeps 365 days unless you change `AUDIT_RETENTION_DAYS`. Its entries can't be edited or deleted from the app. Credential entries in **Settings → Audit Logs** are removed when the credential they belong to is deleted.
+The workspace audit log, under **Command Centre → Governance → Audit** (workspace admins), keeps entries for a set retention period, never less than 180 days, and deletes older entries automatically. The local edition keeps 365 days unless you change `AUDIT_RETENTION_DAYS`. Entries can't be edited or deleted from the audit-log view. The separate credential log, under **Settings → System Settings → Audit Logs** (admins), drops a credential's entries when that credential is deleted.
 {% endhint %}
 
 ## Exporting

@@ -4,7 +4,7 @@ description: Connect Telegram, Slack, Discord or WhatsApp to your workspace, or 
 
 # Channels
 
-Channels connect your Automatos workspace to external messaging platforms. Once a channel is connected, your agents can receive messages from it and send responses through it, beyond the Automatos chat interface.
+Channels connect your Automatos workspace to external messaging platforms. Once a channel is connected, your agents can send messages through it. On Telegram, Slack and WhatsApp they can also receive messages and reply in the same conversation; see the table for each channel.
 
 ## Supported channels
 
@@ -15,11 +15,11 @@ Automatos supports four chat channels, Telegram, Slack, Discord and WhatsApp, pl
 | **Telegram** | A bot token from @BotFather | Two connection modes: **Webhook** (recommended on hosted) or **Polling**. Polling needs no public URL, so it is the default on the local edition |
 | **Slack** | A Slack app's bot token (`xoxb-…`), signing secret and app token (`xapp-…`) | After connecting, paste the webhook URL shown on the Slack card into your Slack app's event settings |
 | **WhatsApp** | A phone number ID and a permanent access token from Meta (WhatsApp Cloud API) | After connecting, paste the webhook URL shown on the WhatsApp card into Meta's webhook settings. The optional verify token is used for Meta's handshake |
-| **Discord** | A bot token from the Discord developer portal | Agents can post to Discord. Receiving messages from Discord is not available yet |
+| **Discord** | A bot token from the Discord developer portal | Agents can post to Discord. Messages sent in Discord are not received |
 | **Generic webhook** | An HTTPS URL | Outbound only: results are sent as a JSON POST to your own endpoint (for example Zapier, n8n or your own service). Choose **Webhook URL** where a delivery destination is offered, such as an agent's heartbeat settings |
 
 {% hint style="info" %}
-Only the channels above carry messages today. Other platform cards on the Channels page have no connector yet.
+Only the channels above carry messages. Other platform cards on the Channels page save a connection but carry no messages.
 {% endhint %}
 
 ## Setting up a channel

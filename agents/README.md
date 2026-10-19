@@ -57,7 +57,7 @@ At the top of the page, four metric cards give you an at-a-glance view:
 
 1. Click **+ Create Agent** in the top right
 2. Pick a category and give the agent a name
-3. Choose a predefined persona (for example the Code Reviewer or Content Strategist persona), write your own, or skip it
+3. Choose a predefined persona (for example the Content Strategist or SEO Specialist persona; choose the Custom category to see every preset, including Code Reviewer), write your own, or skip it
 4. Select a model, then add tools and capabilities
 5. Click **Create Agent**
 

@@ -21,7 +21,7 @@ Automatos AI is a platform for building, deploying, and managing autonomous AI a
 | Add team members | [Team Management](team/README.md) |
 | Track costs and performance | [Analytics](analytics/README.md) |
 | Configure the platform | [Settings](settings/README.md) |
-| Connect Telegram, Slack, WhatsApp | [Channels](tools/channels.md) |
+| Connect Telegram, Slack, Discord or WhatsApp | [Channels](tools/channels.md) |
 | Use voice chat | [Voice Chat](chat/voice.md) |
 | Run autonomous missions | [Missions](activity/missions.md) |
 | Explore the knowledge graph | [Knowledge Graph](knowledge/knowledge-graph.md) |
@@ -38,7 +38,7 @@ Automatos AI is a platform for building, deploying, and managing autonomous AI a
 
 A new hosted workspace starts with Auto and a Brand Designer. Auto builds the rest of your team during onboarding, from a package or from scratch. A fresh local install starts with five agents: Auto, a Brand Designer and a starter team of Researcher, Writer and Analyst.
 
-To add your own, head to [Agents](agents/README.md) and click **+ Create Agent**. Pick a category, then choose a predefined persona (for example the Code Reviewer or Content Strategist persona), write your own, or skip the persona.
+To add your own, head to [Agents](agents/README.md) and click **+ Create Agent**. Pick a category, then choose a predefined persona (for example the Content Strategist or SEO Specialist persona; choose the Custom category to see every preset, including Code Reviewer), write your own, or skip the persona.
 
 ### 3. Give it tools
 
