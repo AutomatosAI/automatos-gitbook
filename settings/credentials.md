@@ -22,7 +22,7 @@ Credentials are the API keys and secrets that connect your workspace to LLM prov
 
 | Type | What it connects |
 | --- | --- |
-| **OpenRouter** | Primary LLM provider (100+ models) |
+| **OpenRouter** | Primary LLM provider (400+ models) |
 | **OpenAI** | GPT models directly |
 | **Anthropic** | Claude models directly |
 | **Composio** | Tool integration framework |

@@ -15,7 +15,7 @@ Five tabs across the top:
 {% tabs %}
 {% tab title="Dashboard" %}
 Real-time overview of your workspace:
-- **Status cards** — agents working now, channels live, tasks completed today, items needing attention
+- **Status cards**: agents working now, active agents, tasks in queue, items needing attention
 - **Schedule** — calendar view of upcoming automated routines
 - **Active Now** — live tasks in progress with progress bars
 - **Agent Reports** — latest standup reports from each agent
@@ -54,11 +54,7 @@ At the top of the Dashboard tab, four cards summarise your workspace:
 
 | Card | What it shows |
 | --- | --- |
-| **Working Now** | Number of agents actively processing tasks |
-| **Channels Live** | Active communication channels (Slack, email, etc.) |
-| **Completed Today** | Total tasks finished in the last 24 hours |
+| **Working Now** | Work in progress right now: running Playbooks and tasks an agent is working on |
+| **Agents Active** | Number of agents with a task in progress |
+| **Tasks in Queue** | Tasks waiting to run |
 | **Needs Attention** | Items requiring your review or intervention |
-
-{% hint style="info" %}
-Click any status card to drill down into details.
-{% endhint %}

@@ -20,7 +20,7 @@ If you've asked a similar question before and it was successfully routed, the sy
 {% endtab %}
 
 {% tab title="Tier 2 — Rules" %}
-Keyword-based rules match your message against known patterns. For example, messages containing "code review" route to the Code Reviewer agent, messages about "security" go to Sentinel.
+Keyword-based rules match your message against known patterns. For example, a rule could send messages that mention "logo" or "brand colours" to the Brand Designer.
 {% endtab %}
 
 {% tab title="Tier 2.5 — Semantic" %}
@@ -66,6 +66,6 @@ Every routing decision is logged to a database table. This means:
 
 ## Channel routing
 
-The Universal Router also handles messages from external channels (Telegram, Slack, WhatsApp, etc.). Messages from all channels go through the same multi-tier routing system, ensuring consistent agent selection regardless of where the message originates.
+The Universal Router also handles messages that arrive from external channels (Telegram, Slack and WhatsApp). They go through the same multi-tier routing system, so agent selection works the same way wherever the message comes from.
 
-See [Tools → Connecting Apps](../tools/connecting-apps.md) for setting up channels.
+See [Channels](../tools/channels.md) for setting up channels.

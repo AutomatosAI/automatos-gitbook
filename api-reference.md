@@ -59,7 +59,6 @@ This is an auto-generated Swagger/OpenAPI interface where you can test endpoints
 | `POST` | `/api/agents/batch` | Create multiple agents at once |
 | `PUT` | `/api/agents/{id}` | Update an agent |
 | `DELETE` | `/api/agents/{id}` | Delete an agent |
-| `POST` | `/api/agents/{id}/test` | Run capability test on an agent |
 | `POST` | `/api/agents/{id}/feedback` | Submit feedback to improve an agent |
 | `GET` | `/api/agents/{id}/usage` | Get token usage and cost stats for an agent |
 
@@ -224,6 +223,12 @@ This is an auto-generated Swagger/OpenAPI interface where you can test endpoints
 | `GET` | `/api/widgets/documents` | Widget document access |
 | `GET` | `/api/widget-memory` | Widget memory endpoints |
 
+### Governance
+
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| `GET` | `/api/v1/governance/audit-log` | Workspace audit log, paginated (workspace admins) |
+
 ### System
 
 | Method | Endpoint | Description |
@@ -256,7 +261,7 @@ Response: Server-Sent Events stream
 data: {"type": "token", "content": "I'll review the login"}
 data: {"type": "token", "content": " component for XSS..."}
 data: {"type": "tool_call", "name": "github_get_file", "args": {"path": "src/login.tsx"}}
-data: {"type": "done", "agent": "Sentinel", "tokens": {"input": 1234, "output": 567}}
+data: {"type": "done", "agent": "Auto", "tokens": {"input": 1234, "output": 567}}
 ```
 
 ### Create an agent
@@ -353,7 +358,7 @@ eventSource.onmessage = (event) => {
 };
 ```
 
-The SSE stream is compatible with the **Vercel AI SDK** for seamless frontend integration.
+The SSE stream is compatible with the **Vercel AI SDK**, so the SDK can read it directly.
 
 {% hint style="info" %}
 For the complete endpoint list with request/response schemas, use the interactive Swagger docs at `/docs` on your instance. The Swagger UI lets you test endpoints directly from your browser.

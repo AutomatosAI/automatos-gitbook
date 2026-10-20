@@ -4,35 +4,32 @@ description: Shortcut buttons in the chat interface for common tasks.
 
 # Quick Actions
 
-Quick actions appear as buttons below the chat input. They provide fast access to common tasks without typing.
+Quick actions appear as buttons below the chat input. They switch the chat into a mode or open a related view without typing.
 
-<!-- IMAGE: Quick actions bar showing Code, Create an Agent, Knowledge Base, Playbooks, Edit Tools -->
+<!-- IMAGE: Quick actions bar showing Live, Code, Plan, Mission and pinned agents -->
 
 ## Available actions
 
+### Live
+
+Starts a live voice conversation. Speak instead of typing, and hear the reply. Click **Live** again to turn it off. See [Voice Chat](voice.md).
+
 ### Code
 
-Opens a coding context. Your message will be routed to code-focused agents (like Code Reviewer or QA Engineer) and the response will include code formatting, syntax highlighting, and file references.
+Opens the Code canvas on your workspace's files.
 
-### Create an Agent
+### Plan
 
-Launches the agent creation flow directly from chat. Useful when you're in the middle of work and realise you need a new specialist.
+Turns on plan mode. In plan mode the agent writes a structured plan (goal summary, steps, dependencies, risks and success criteria) without calling tools or making changes. Refine the plan in conversation. When you are happy with it, click **Launch as Mission** under the reply. Click **Plan** again to turn plan mode off.
 
-### Knowledge Base
+### Mission
 
-Focuses the conversation on your uploaded documents. Great for asking questions like:
-- "Summarise the Q4 report"
-- "What does section 3.2 say about authentication?"
-- "Find all references to rate limiting"
+Opens the Missions view, where you give your agents a goal to plan and carry out. See [Missions](../activity/missions.md).
 
-### Playbooks
+### Pinned agents
 
-Browse and trigger multi-step workflow playbooks. Playbooks coordinate multiple agents to complete complex tasks in sequence.
-
-### Edit Tools
-
-Quick access to tool management — connect new apps or modify existing tool assignments for your agents.
+Use **Pin an agent** to add an agent to the bar. Click a pinned agent to send your messages straight to it; click it again to go back to automatic routing.
 
 {% hint style="info" %}
-Quick actions set context for your next message. You still type your request normally after clicking one.
+Plan mode and a pinned agent stay on until you turn them off, so check the bar before you send.
 {% endhint %}

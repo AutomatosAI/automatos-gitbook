@@ -40,9 +40,9 @@ Filter logs by:
 - **Search** — text search across log entries
 
 {% hint style="info" %}
-Audit logs are retained for the lifetime of your workspace. They cannot be deleted — this ensures a complete audit trail for compliance.
+The workspace audit log, under **Command Centre → Governance → Audit** (workspace admins), keeps entries for a set retention period, never less than 180 days, and deletes older entries automatically. The local edition keeps 365 days unless you change `AUDIT_RETENTION_DAYS`. Entries can't be edited or deleted from the audit-log view. The separate credential log, under **Settings → System Settings → Audit Logs** (admins), drops a credential's entries when that credential is deleted.
 {% endhint %}
 
 ## Exporting
 
-Click **Export** to download logs as CSV for external analysis or compliance reporting.
+The app has no export button. Workspace admins can read the workspace audit log through the API, page by page: `GET /api/v1/governance/audit-log` (see the [API Reference](../api-reference.md)).

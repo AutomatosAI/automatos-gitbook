@@ -50,8 +50,8 @@ The feed captures every platform action:
 | **Playbook step** | Step 3 of "Nightly Review" completed |
 | **Mission update** | Mission "API Audit" task 2 marked complete |
 | **Memory stored** | Agent saved a new fact to long-term memory |
-| **Report generated** | Sentinel generated a security standup report |
-| **Routing decision** | Universal Router selected Code Reviewer for a message |
+| **Report generated** | The Brand Designer generated a standup report |
+| **Routing decision** | Universal Router selected the Researcher for a message |
 
 ### Filtering the feed
 

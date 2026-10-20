@@ -67,8 +67,8 @@ Complete record of system activity:
 
 ## Channels and integrations
 
-Channel credentials (Telegram bot tokens, Slack app tokens, etc.) are managed in the Credentials section. Integration tokens are stored with masked display — you can see the connection status without exposing the full secret.
+Channel credentials (Telegram bot tokens, Slack app tokens and so on) are entered in **Settings → Channels**. They are not shown again after you connect; each channel's card shows its connection status. See [Channels](../tools/channels.md).
 
 ## BYOK — Bring Your Own Key
 
-Users can provide their own API keys for LLM providers instead of using the workspace default. This is useful for teams where individuals have their own API accounts. Configure BYOK preferences in General settings.
+Users can provide their own API keys for LLM providers instead of using the workspace default. This is useful for teams where individuals have their own API accounts. Add your keys under **Settings → API Keys** and toggle each provider to choose whether your key is used for chat and agent execution.

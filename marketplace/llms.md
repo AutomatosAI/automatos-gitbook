@@ -12,7 +12,7 @@ The LLMs tab lets you explore all available language models, compare their capab
 
 | Provider | Models |
 | --- | --- |
-| **OpenRouter** | Access to 100+ models from all providers |
+| **OpenRouter** | Access to 400+ models from all providers |
 | **OpenAI** | GPT-4, GPT-4 Turbo, GPT-3.5 |
 | **Anthropic** | Claude Opus, Sonnet, Haiku |
 | **DeepSeek** | DeepSeek Chat, DeepSeek Coder |

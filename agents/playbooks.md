@@ -26,15 +26,15 @@ A playbook defines:
 
 <!-- IMAGE: Playbook creation dialog with steps editor -->
 
-## Example: Nightly code review
+## Example: Two-minute brief
+
+A fresh local install includes this demo playbook. It takes one input, a topic, and needs nothing beyond your AI key:
 
 | Step | Agent | Task |
 | --- | --- | --- |
-| 1 | Scout | Pull latest commits from GitHub |
-| 2 | Code Reviewer | Review each commit for issues |
-| 3 | Sentinel | Run security scan on changed files |
-| 4 | Scribe | Write a summary report |
-| 5 | Comms | Post report to Slack |
+| 1 | Researcher | Research the topic and write research notes |
+| 2 | Writer | Write a one-page brief from the Researcher's notes |
+| 3 | Analyst | Review the brief, fix gaps or unsupported claims, and output the final brief |
 
 ## Running a playbook
 
@@ -48,7 +48,7 @@ Set a cron schedule (e.g., daily at 23:00) and the playbook runs automatically. 
 {% endtab %}
 
 {% tab title="From Chat" %}
-Ask in chat: "Run the nightly code review playbook" and the router will trigger it.
+Ask Auto in chat: "Run the Two-minute brief playbook on electric bikes". Auto shows the run on a card for you to approve, then starts it.
 {% endtab %}
 {% endtabs %}
 

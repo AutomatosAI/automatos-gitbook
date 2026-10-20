@@ -1,10 +1,10 @@
 ---
-description: Connect your agents to 500+ external apps and services.
+description: Connect your agents to 1,000+ external apps and services.
 ---
 
 # Tools & Integrations
 
-The Tools page lets you connect external applications to your workspace. Once connected, you can assign tools to agents so they can interact with GitHub, Slack, Jira, databases, and hundreds more.
+The Tools page lets you connect external applications to your workspace. Once connected, you can assign tools to agents so they can interact with GitHub, Slack, Jira, databases, and over 1,000 more.
 
 <!-- IMAGE: Tools & Integrations page showing connected apps grid -->
 
@@ -40,7 +40,7 @@ Security status for your tool connections:
 2. **Assign** it to one or more agents
 3. **Agents use it** automatically when relevant — the tool router decides when to call tools based on the conversation context
 
-Tools are powered by **Composio**, which provides 500+ pre-built integrations with a unified API.
+Tools are powered by **Composio**, which provides 1,000+ pre-built integrations with a unified API. On the local edition, bring your own Composio key.
 
 ## Stats bar
 
@@ -50,7 +50,7 @@ Tools are powered by **Composio**, which provides 500+ pre-built integrations wi
 | **Available** | Total integrations you can connect |
 | **Sync** | Button to refresh connection status |
 
-<!-- IMAGE: Stats bar showing 19 Connected, 500+ Available -->
+<!-- IMAGE: Stats bar showing 19 Connected, 1,000+ Available -->
 
 {% hint style="info" %}
 You don't need to connect everything upfront. Start with the tools your agents need most (GitHub, Slack, etc.) and add more as needed.
@@ -84,4 +84,4 @@ Configure schedules in the playbook's trigger settings. Common patterns:
 | [Connecting Apps](connecting-apps.md) | How to authenticate and connect a new tool |
 | [Assigning Tools to Agents](assigning.md) | Give agents access to specific tools |
 | [Security](security.md) | Tool connection security and permissions |
-| [Channels](channels.md) | Connect messaging platforms like Telegram, Slack, and WhatsApp |
+| [Channels](channels.md) | Connect Telegram, Slack, Discord or WhatsApp, or send results to a webhook |
