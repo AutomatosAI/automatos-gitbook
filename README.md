@@ -26,6 +26,7 @@ Automatos AI is a platform for building, deploying, and managing autonomous AI a
 | Run autonomous missions | [Missions](activity/missions.md) |
 | Explore the knowledge graph | [Knowledge Graph](knowledge/knowledge-graph.md) |
 | Use the REST API | [API Reference](api-reference.md) |
+| See what Automatos AI does for EU AI Act Article 50, and what I do | [EU AI Act: Article 50](compliance/article-50.md) |
 
 ## Quick start
 
