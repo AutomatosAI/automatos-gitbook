@@ -70,3 +70,4 @@
 ## Reference
 
 * [API Reference](api-reference.md)
+* [EU AI Act: Article 50](compliance/article-50.md)
