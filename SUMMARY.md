@@ -67,6 +67,19 @@
   * [Models](settings/models.md)
   * [Audit Logs](settings/audit-logs.md)
 
+## Automatos Go (mobile app)
+
+* [Automatos Go](automatos-go/README.md)
+  * [Getting Started](automatos-go/getting-started.md)
+  * [Connect Your Own Server](automatos-go/connect-your-own-server.md)
+  * [Chat](automatos-go/chat.md)
+  * [Command Centre](automatos-go/command-centre.md)
+  * [Notifications](automatos-go/notifications.md)
+  * [Styles & Themes](automatos-go/styles-and-themes.md)
+  * [Voice](automatos-go/voice.md)
+  * [Privacy & AI](automatos-go/privacy-and-ai.md)
+  * [Troubleshooting](automatos-go/troubleshooting.md)
+
 ## Reference
 
 * [API Reference](api-reference.md)
