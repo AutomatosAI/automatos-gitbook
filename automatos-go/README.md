@@ -32,8 +32,8 @@ The app signs in to an account you already have. It can't create an account or a
 
 | Feature | Status |
 | --- | --- |
-| [Notifications and Face ID](notifications.md) | Coming in the next update |
-| [Styles and themes](styles-and-themes.md): Studio, Play and HUD | Coming in the next update |
+| [Notifications and Face ID](notifications.md) | Coming soon |
+| [Styles and themes](styles-and-themes.md): Studio, Play and HUD | Coming soon |
 | [Voice](voice.md): hold to talk, and Auto speaks the reply | Coming in a later update |
 | **Report this** on Auto's messages and on Deliverables | In the app, but not switched on yet. See [Privacy & AI](privacy-and-ai.md) |
 | Approving social posts from the phone | In the app, but nothing opens it yet. See [Command Centre](command-centre.md) |

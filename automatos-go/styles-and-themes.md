@@ -7,7 +7,7 @@ description: Studio, Play and HUD styles in Automatos Go, following the theme yo
 Automatos Go can look three ways: **Studio**, **Play** and **HUD**. By default the phone follows the theme you use in Studio.
 
 {% hint style="info" %}
-**Coming in the next update.** Styles are being built now. Today the app is in the Studio style and follows your iPhone's light or dark setting. This page describes styles as they are being built, so details may change.
+**Coming soon.** Styles are being built now. Today the app is in the Studio style and follows your iPhone's light or dark setting. This page describes styles as they are being built, so details may change.
 {% endhint %}
 
 <!-- IMAGE: Style and look screen with the Studio, Play and HUD cards -->
@@ -20,11 +20,11 @@ Automatos Go can look three ways: **Studio**, **Play** and **HUD**. By default t
 | **Play** | Auto the mascot and the Ember look. Tap **Make it yours →** to change the look. |
 | **HUD** | Voice first, with glow and grid. Tap **Looks →** to choose and change a look. |
 
-Open **Settings → Style and look** and tap a style's card. The whole app changes at once, with a small tap you can feel. When you switch to Play, Auto waves hello.
+Open **Settings → Style and look** and tap a style's card. The whole app changes at once, with a small tap you can feel. When you switch to Play, Auto says hello.
 
 ## Same as Studio
 
-**Same as Studio** is the first row under the Studio card, and it is where the phone starts. The phone follows the theme you use in Studio, and the row says what it paints now, for example "Now Play".
+**Same as Studio** is the first row in the Studio card, just below **Light**, **Dark** and **System**, and it is where the phone starts. The phone follows the theme you use in Studio, and the row says what it paints now, for example "Now Play".
 
 | Theme you use in Studio | What the phone shows |
 | --- | --- |
@@ -35,7 +35,9 @@ Open **Settings → Style and look** and tap a style's card. The whole app chang
 
 Pick a style card instead if you want the phone to look different from Studio. Tap **Same as Studio** to follow Studio again.
 
-Installed themes made for phones are also listed under the Studio card, by name and version, for example "Harbour · 1.1.0". If a theme on screen is taken away, the app says "That theme isn't available any more, so Automatos Go is back on Studio."
+Other installed themes made for phones are listed in the Studio card by name and version, for example "Harbour · 1.1.0". A theme that hasn't been reviewed, such as one your workspace made itself, shows up after you say yes to it in Studio. On your own server, an older version of Automatos shows only the three styles.
+
+If a theme you picked on the phone is taken away, or the theme Studio uses is withdrawn, the app says "That theme isn't available any more, so Automatos Go is back on Studio." With **Same as Studio** on, the phone simply follows whatever Studio shows next.
 
 Themes are installed and chosen in Studio, in **Settings → Appearance**. See [Themes](../themes/README.md). A theme gives the phone colours, fonts, and pictures and short clips of Auto, never code.
 
@@ -43,7 +45,7 @@ Themes are installed and chosen in Studio, in **Settings → Appearance**. See [
 
 **Make it yours** has six settings: **Accent**, **Background**, **Type**, **Auto's shell**, **Auto's light · eyes + ring** and **Glow**. A preview shows the result as you change it.
 
-* Start from a preset: Ember, Obsidian, Aurora, Workshop or Daylight. Presets can't be changed.
+* Start from a preset: Ember, Obsidian, Aurora, Workshop or Daylight. Your changes never alter the preset itself. They show as "Ember · edited" until you tap **Save as new look**, and **Reset** puts the preset back.
 * **Save as new look** keeps your changes as a look of your own. **Reset** goes back to the look you picked.
 * Touch and hold one of your looks to **Rename**, **Duplicate** or **Delete** it.
 

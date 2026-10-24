@@ -7,7 +7,7 @@ description: What Automatos Go notifies you about, answering from a notification
 Automatos Go can tell you when work is waiting on you: a question to answer, a ticket to review, or a message from Auto.
 
 {% hint style="info" %}
-**Coming in the next update.** Notifications need the next update of the app and an update to Automatos on the server. This page describes them as they are being built, so details may change.
+**Coming soon.** Notifications need an update of the app and an update to Automatos on the server. This page describes them as they are being built, so details may change.
 {% endhint %}
 
 <!-- IMAGE: Settings → Notifications with This phone, What notifies you and Daily digest -->

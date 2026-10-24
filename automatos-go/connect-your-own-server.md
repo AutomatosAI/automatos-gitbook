@@ -24,6 +24,8 @@ Once pairing is on, every browser that opens Studio also asks for a code, the br
 
 The code works once, for 10 minutes. Click **Get a new code** if it runs out. An owner or admin of the workspace gets the code. **Pair a phone** shows only when the server takes phones.
 
+The first time, Studio may ask "Send notifications to phones through Expo's push service?" before it shows the code. Click **Yes** or **Not now**. You can change the answer later in **Settings → Phones & devices**.
+
 ## Step 2: Pair the phone
 
 1. Open Automatos Go and tap **Connect to your own server**.
@@ -40,9 +42,9 @@ The card also says where your data goes. Your chats, files and reports stay on y
 The pairing link Studio shows under the code names a server address. If it starts with localhost or 127.0.0.1, a phone can't use it: ask the person who runs the server for the address phones use. If the app says "This address doesn't answer like an Automatos server that pairs phones", you may have typed the Studio address instead.
 {% endhint %}
 
-## Scanning the QR code (coming with the next Automatos server update)
+## Scanning the QR code
 
-Studio will show the pairing code as a QR code too. The scanner is already in the app: in Automatos Go, tap **Scan the code in Studio** and point the camera at it. The app fills in the address and the code, and still stops at **Pair with this server?**. The app asks to use the camera the first time. If you'd rather not, tap **Type the code**.
+On a server with the latest Automatos, Studio shows the pairing code as a QR code too. The scanner is already in the app: in Automatos Go, tap **Scan the code in Studio** and point the camera at it. The app fills in the address and the code, and still stops at **Pair with this server?**. The app asks to use the camera the first time. If you'd rather not, tap **Type the code**.
 
 {% hint style="warning" %}
 Scan the code from inside Automatos Go. The iPhone's Camera app opens the server's web page, which can't pair the phone.
