@@ -11,7 +11,7 @@ A theme reaches a phone in two ways:
 
 ## In your phone's browser
 
-Play 1.2.0 and HUD 1.1.0 draw from 360 pixels wide, so a phone's browser shows their own phone layouts. Voice works there too: hold the voice button to talk to Auto (see [Voice Chat](../chat/voice.md)). A theme that needs a wider window shows Studio's layout on a phone instead.
+Play 1.2.1 and HUD 1.1.1 draw from 360 pixels wide, so a phone's browser shows their own phone layouts. Voice works there too: hold the voice button to talk to Auto (see [Voice Chat](../chat/voice.md)). A theme that needs a wider window shows Studio's layout on a phone instead.
 
 {% tabs %}
 {% tab title="Play" %}

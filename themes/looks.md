@@ -23,7 +23,7 @@ A look is one way a theme can look: a set of its settings, saved under a name. C
 2. Click **Customise look…**. It opens **Make it yours**.
 
 {% hint style="info" %}
-**Customise look…** shows only while a theme is your style and its layout is showing, in a window at least as wide as the theme needs. Play 1.2.0 and HUD 1.1.0 draw from a phone's width.
+**Customise look…** shows only while a theme is your style and its layout is showing, in a window at least as wide as the theme needs. Play 1.2.1 and HUD 1.1.1 draw from a phone's width.
 {% endhint %}
 
 The theme draws **Make it yours** itself. When there is nothing to edit, the page says why:

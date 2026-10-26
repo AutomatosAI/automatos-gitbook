@@ -8,7 +8,7 @@ Owners and admins add themes to a workspace. Every member then chooses for thems
 
 ## Get Play or HUD
 
-Play and HUD are themes from the [Automatos Design Kit](https://github.com/AutomatosAI/automatos-design-kit). Neither is built into the app, and nothing adds them for you: a workspace has them only once someone installs them. The newest versions are Play 1.2.0 and HUD 1.1.0.
+Play and HUD are themes from the [Automatos Design Kit](https://github.com/AutomatosAI/automatos-design-kit). Neither is built into the app, and nothing adds them for you: a workspace has them only once someone installs them. The newest versions are Play 1.2.1 and HUD 1.1.1.
 
 {% tabs %}
 {% tab title="Local edition" %}
@@ -91,7 +91,7 @@ The size limits, by default (the server's administrator can change them):
 A signature file tells the server that Automatos vouches for exactly these files.
 
 {% hint style="info" %}
-**Automatos's theme-signing key now ships with Automatos**, so a signature file made with it checks out. **No release carries one yet**: the Design Kit's releases, Play 1.2.0 and HUD 1.1.0 included, have no .sig.json file so far. A signature file that any other key made is refused with "No Automatos signing key verifies this signature for these files, so nothing was installed."
+**Automatos's theme-signing key now ships with Automatos**, so a signature file made with it checks out. **No release carries one yet**: the Design Kit's releases, Play 1.2.1 and HUD 1.1.1 included, have no .sig.json file so far. A signature file that any other key made is refused with "No Automatos signing key verifies this signature for these files, so nothing was installed."
 {% endhint %}
 
 - It is at most 4 KB. The server checks it against the package's own files before it stores anything.

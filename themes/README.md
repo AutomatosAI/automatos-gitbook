@@ -25,7 +25,7 @@ Each installed theme is built on one of the two styles, Studio or Classic: its b
 
 ## Play and HUD
 
-The current versions are **Play 1.2.0** and **HUD 1.1.0**.
+The current versions are **Play 1.2.1** and **HUD 1.1.1**.
 
 - **Both talk.** Hold the voice button in their chat to talk to Auto, or hold the Space bar on a laptop or desktop. Where your workspace has Auto Live, the same button starts a live call. See [Voice Chat](../chat/voice.md).
 - **Both fit a phone.** In a phone's browser, Play and HUD draw a layout of their own for a phone's width. See [On Your Phone](on-your-phone.md).
@@ -71,7 +71,7 @@ Every installed theme sits in one of these groups. The group decides whether you
 {% hint style="info" %}
 **Automatos's theme-signing key now ships with Automatos.** An official version is one Automatos reviewed and signed with that key: it shows **Signed by Automatos**, members don't opt in to it, and it can be the workspace default. In **Marketplace → Themes**, a signed Play or HUD version is marked **Official**.
 
-**No release is signed yet.** The Design Kit's releases, Play 1.2.0 and HUD 1.1.0 included, carry no signature file so far. Until the first signed release, every theme you upload is a private upload, and every theme from **Marketplace → Themes** is a Marketplace theme. A signature file that the key didn't make is refused: "No Automatos signing key verifies this signature for these files, so nothing was installed."
+**No release is signed yet.** The Design Kit's releases, Play 1.2.1 and HUD 1.1.1 included, carry no signature file so far. Until the first signed release, every theme you upload is a private upload, and every theme from **Marketplace → Themes** is a Marketplace theme. A signature file that the key didn't make is refused: "No Automatos signing key verifies this signature for these files, so nothing was installed."
 {% endhint %}
 
 Why the opt-in: a theme's code runs in your browser with your session. The opt-in dialog says so in the server's own words: "This theme was not reviewed. Its code runs with your access to all your workspaces." See [Opting in to a private theme](installing-and-choosing.md#opting-in-to-a-private-theme).
@@ -93,7 +93,7 @@ The **Appearance** menu is the button with a sun, moon or screen icon (it shows 
 | Pair a phone | **Settings → Phones & devices** |
 
 {% hint style="info" %}
-Each theme names the narrowest window it draws in. Play 1.2.0 and HUD 1.1.0 draw from 360 pixels, a phone's width; another theme may need a wider window, such as 1024 pixels. In a window narrower than the theme's, you get Studio's layout instead, and **Make it yours** says it needs a wider window. **Customise look…** shows in the Appearance menu only while a theme is your style and its layout is showing.
+Each theme names the narrowest window it draws in. Play 1.2.1 and HUD 1.1.1 draw from 360 pixels, a phone's width; another theme may need a wider window, such as 1024 pixels. In a window narrower than the theme's, you get Studio's layout instead, and **Make it yours** says it needs a wider window. **Customise look…** shows in the Appearance menu only while a theme is your style and its layout is showing.
 {% endhint %}
 
 ## The two editions
