@@ -42,7 +42,6 @@ This is an auto-generated Swagger/OpenAPI interface where you can test endpoints
 | Method | Endpoint | Description |
 | --- | --- | --- |
 | `POST` | `/api/chat` | Send a message (returns SSE streaming response) |
-| `POST` | `/api/chat/voice` | Send a voice message (audio upload → STT → agent → TTS) |
 | `GET` | `/api/chat/conversations` | List conversations for the current user |
 | `GET` | `/api/chat/conversations/{id}` | Get conversation history |
 | `PUT` | `/api/chat/conversations/{id}/title` | Update conversation title |
@@ -210,10 +209,12 @@ This is an auto-generated Swagger/OpenAPI interface where you can test endpoints
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| `POST` | `/api/chat/voice` | Send voice message |
-| `GET` | `/api/chat/voice/health` | Voice service health check |
-| `GET` | `/api/voice-profiles` | List voice profiles |
-| `POST` | `/api/voice-profiles` | Create a voice profile |
+| `GET` | `/api/voice/live-status` | Whether Auto Live can start for this workspace now, and if not, why |
+| `POST` | `/api/voice/web-call` | Start an Auto Live call |
+| `POST` | `/api/voice/arm` | Set up Auto Live with a Retell API key (platform admins) |
+| `PUT` | `/api/workspaces/current/voice-live` | Turn Auto Live on or off for the workspace (owners and admins) |
+
+Hold to talk has no voice endpoint of its own: it sends the words as a normal `POST /api/chat` message with `spokenMode: true`, and the answer comes back as text for the browser to speak.
 
 ### Widgets (Embedded SDK)
 

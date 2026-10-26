@@ -35,21 +35,19 @@ The chat page has three main areas:
 - **Attachment button** — upload files directly into the conversation
 - **Auto mode selector** — shows which routing mode is active (Auto, or a specific agent)
 - **Model indicators** — shows which LLM models are available
+- **Voice button** — the microphone next to **Send**: hold it to talk to Auto
 - **Quick actions** — shortcut buttons below the input for common tasks
 
 <!-- IMAGE: Close-up of the chat input bar with Auto mode and quick actions -->
 
 ### Voice chat
 
-Automatos supports voice-in, voice-out conversations. Click the microphone icon in the input bar to speak your message — it's transcribed, processed by the assigned agent, and the response is spoken back using text-to-speech.
+You can talk to Auto instead of typing:
 
-Voice features:
-- **Speech-to-text** — your voice is transcribed automatically
-- **Text-to-speech** — agent responses are read aloud
-- **Voice profiles** — choose from different voice options, including custom cloned voices
-- **Audio playback** — listen to responses via the built-in player
+- **Hold to talk**, on every plan: hold the microphone button next to **Send**, speak, and let go. Your words go to Auto as a message in this conversation, and your browser reads the answer aloud.
+- **Auto Live**: a real-time voice call with Auto, from the **Live** button. On the hosted edition it comes with the Business plan.
 
-Go to **Settings → Voice Profiles** to manage voice options. See [Voice Chat](voice.md) for the full guide.
+See [Voice Chat](voice.md) for the full guide.
 
 ## Quick actions
 
@@ -57,7 +55,7 @@ Below the chat input, you'll see shortcut buttons:
 
 | Action | What it does |
 | --- | --- |
-| **Live** | Start a live voice conversation |
+| **Live** | Start or end an Auto Live voice call |
 | **Code** | Open the Code canvas on your workspace's files |
 | **Plan** | Plan mode: get a structured plan without taking any actions, then launch it as a Mission |
 | **Mission** | Open Missions to give your agents a goal |
@@ -107,4 +105,4 @@ The more agents and knowledge you add, the more capable your chat becomes. Start
 | [Routing & Auto Mode](routing.md) | How message routing works and how to override it |
 | [Quick Actions](quick-actions.md) | Detailed guide to chat shortcuts |
 | [Chat History](history.md) | Managing and searching past conversations |
-| [Voice Chat](voice.md) | Voice input/output and voice profiles |
+| [Voice Chat](voice.md) | Talking to Auto by voice: hold to talk and Auto Live |
