@@ -8,12 +8,12 @@ Owners and admins add themes to a workspace. Every member then chooses for thems
 
 ## Get Play or HUD
 
-Play and HUD are themes from the [Automatos Design Kit](https://github.com/AutomatosAI/automatos-design-kit). Neither is built into the app, and nothing adds them for you: a workspace has them only once someone installs them.
+Play and HUD are themes from the [Automatos Design Kit](https://github.com/AutomatosAI/automatos-design-kit). Neither is built into the app, and nothing adds them for you: a workspace has them only once someone installs them. The newest versions are Play 1.2.0 and HUD 1.1.0.
 
 {% tabs %}
 {% tab title="Local edition" %}
 1. Download the newest Play or HUD theme file (it ends in .autotheme) from the Design Kit's [releases](https://github.com/AutomatosAI/automatos-design-kit/releases). A .sha256 file next to it holds its checksum.
-2. Open **Settings → Appearance → Themes** and click **Install theme**, then pick the file. Leave **Add its signature file** alone: no release carries one yet (see [The signature file](#the-signature-file)).
+2. Open **Settings → Appearance → Themes** and click **Install theme**, then pick the file. Leave **Add its signature file** alone unless the release has a .sig.json file next to the theme file: no release carries one yet (see [The signature file](#the-signature-file)).
 3. The theme installs as a private upload. Its row shows **Private · not reviewed**.
 4. Click **Use this theme**, then **Opt in and use**. Each person opts in once per version.
 
@@ -23,7 +23,7 @@ The person who runs the local edition counts as a platform admin, so the upload 
 {% tab title="Hosted edition" %}
 Add the theme from **Marketplace → Themes** when it is listed there.
 
-A workspace owner or admin who isn't a platform admin can't upload Play or HUD: the publisher name is reserved and no signed release exists yet, so the upload is refused with "Only an Automatos admin can upload a theme under the "automatos" publisher."
+A workspace owner or admin who isn't a platform admin can't upload Play or HUD: the publisher name is reserved and no signed release exists yet, so the upload is refused with "Only an Automatos admin can upload a theme under the "automatos" publisher." Once a release carries its signature file, uploading the theme file with its signature file is accepted, while private uploads are on in the workspace.
 {% endtab %}
 {% endtabs %}
 
@@ -44,7 +44,7 @@ Adding a theme from the Marketplace needs no upload switch: see [Add a theme fro
 
 ## Install a theme from a file
 
-A theme comes as one .autotheme file. A signed release carries a small .sig.json signature file next to it. No release is signed yet: see [The signature file](#the-signature-file).
+A theme comes as one .autotheme file. A signed release carries a small .sig.json signature file next to it. Automatos's signing key ships with Automatos, but no release is signed yet: see [The signature file](#the-signature-file).
 
 1. Open **Settings → Appearance → Themes**.
 2. If you have the theme's signature file, click **Add its signature file** first and pick the .sig.json file. The page says: "Optional: the .sig.json released with the theme. Automatos checks it before anything is installed."
@@ -90,12 +90,12 @@ The size limits, by default (the server's administrator can change them):
 
 A signature file tells the server that Automatos vouches for exactly these files.
 
-{% hint style="warning" %}
-**No signature file works yet.** This release of Automatos holds no Automatos signing key, and the Design Kit's releases carry no .sig.json file. An upload with a signature file is always refused: even a well-formed file made for that package gets "No Automatos signing key verifies this signature for these files, so nothing was installed." What follows applies once an Automatos key is added.
+{% hint style="info" %}
+**Automatos's theme-signing key now ships with Automatos**, so a signature file made with it checks out. **No release carries one yet**: the Design Kit's releases, Play 1.2.0 and HUD 1.1.0 included, have no .sig.json file so far. A signature file that any other key made is refused with "No Automatos signing key verifies this signature for these files, so nothing was installed."
 {% endhint %}
 
 - It is at most 4 KB. The server checks it against the package's own files before it stores anything.
-- When it is taken, the theme shows **Signed by Automatos** in Settings in place of **Private · not reviewed** (the Appearance menu and ⌘K still note **Private · not reviewed**). A signed upload counts as reviewed: members don't opt in to it, it can be the workspace default, and it may use the publisher name reserved for Automatos.
+- When it is taken, the theme shows **Signed by Automatos** in place of **Private · not reviewed**, in Settings, the Appearance menu and ⌘K. A signed upload counts as reviewed: members don't opt in to it, it can be the workspace default, and it may use the publisher name reserved for Automatos.
 - Uploading a package you already have, this time with its signature file, adds the signature to the copy you have.
 - If the signature later stops checking out (for example, its key is revoked), that version is turned off with the reason "This theme's signature doesn't check out."
 
@@ -170,7 +170,7 @@ Members don't opt in to a Marketplace theme, and it can be the workspace default
 
 ## Opting in to a private theme
 
-When you click **Use this theme** on a private version you haven't opted in to, a dialog asks first:
+When you choose a private version you haven't opted in to, with **Use this theme**, from the **Appearance** menu or from ⌘K, a dialog asks first:
 
 - Its title: "Run *name* *version*?"
 - The server's sentence: "This theme was not reviewed. Its code runs with your access to all your workspaces."
@@ -179,11 +179,11 @@ When you click **Use this theme** on a private version you haven't opted in to, 
 
 <!-- IMAGE: The opt-in dialog with Cancel and Opt in and use -->
 
-**Opt in and use** records your opt-in and makes the theme your choice. On the hosted edition you may be asked to confirm it's you first.
+**Opt in and use** records your opt-in and makes the theme your choice. On the hosted edition you may be asked to confirm it's you first. **Cancel** chooses nothing: you stay on the style you had.
 
 - The opt-in is yours, for one workspace and one version. An update to a new private version asks again.
 - Marketplace themes and signed uploads need no opt-in.
-- If the theme moved to another version while the dialog was open, the server refuses with "That version is no longer this theme's current one. Reload to see the version installed now." The dialog closes and the list refreshes: click **Use this theme** again to see the version installed now.
+- If the theme moved to another version while the dialog was open, the server refuses with "That version is no longer this theme's current one. Reload to see the version installed now." The dialog closes and the list refreshes: choose the theme again to see the version installed now.
 - A theme you chose but haven't opted in to doesn't run. Studio shows instead, with the notice "The theme could not start, so Studio is showing instead." and the reason "You have not opted in to its private code."
 
 ## Choosing a theme
@@ -200,7 +200,7 @@ What happens when you choose:
 - Classic and Studio switch at once. An installed theme is saved first, then the page reloads into it.
 - If the server refuses, the tab stays on the style it had (a Classic or Studio pick switches back) and you see the server's reason. From the menu or ⌘K it comes under "Your theme choice was not saved."
 - The choice is per workspace: another workspace can show another theme.
-- The Appearance menu and ⌘K note "Private · not reviewed" beside every uploaded theme, a signed one included (Settings calls a signed upload **Signed by Automatos**). A withdrawn theme is not offered.
+- The Appearance menu and ⌘K note each uploaded theme: "Private · opt in first" for a private version you haven't opted in to (choosing it opens the opt-in dialog, and nothing is saved until you opt in), "Signed by Automatos" for a signed one, otherwise "Private · not reviewed". A withdrawn theme is not offered.
 - The menu's **Tone** (Light, Dark, System) is yours to set, unless the theme sets it. Then the tone items rest, with "Set by your look" (the look decides) or "Set by your theme" (the theme always uses one tone).
 - If the workspace has switched off **Members choose their own theme**, the server refuses a choice: "This workspace's admins choose its theme; the workspace default applies."
 
@@ -223,7 +223,7 @@ An owner or admin can make one installed theme the **workspace default**:
 Members see the default when they haven't chosen a theme, when the theme they chose was uninstalled, and always while members may not choose.
 
 {% hint style="warning" %}
-**Only a theme that isn't private can be the default**: a Marketplace theme or a signed upload. No upload can be signed yet, so today that means a Marketplace theme. A default runs for members who never said yes to its code.
+**Only a theme that isn't private can be the default**: a Marketplace theme or a signed upload. No release is signed yet, so today that means a Marketplace theme. A default runs for members who never said yes to its code.
 {% endhint %}
 
 On a private upload, **Make default** is greyed, with this beside it: "A theme that was not reviewed can’t be the workspace default." The server holds the same rule: "An unreviewed theme can't be the workspace default: members would run its code without saying yes."

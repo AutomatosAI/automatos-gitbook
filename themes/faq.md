@@ -8,7 +8,7 @@ The questions people ask first, with short answers and a link to the full story.
 
 ## How do I get Play or HUD?
 
-On the local edition, download the theme's .autotheme file from the Design Kit's [releases](https://github.com/AutomatosAI/automatos-design-kit/releases), install it with **Settings → Appearance → Themes → Install theme**, then opt in to it. On the hosted edition, add it from **Marketplace → Themes** when it is listed there. See [Get Play or HUD](installing-and-choosing.md#get-play-or-hud).
+On the local edition, download the theme's .autotheme file (the newest are Play 1.2.0 and HUD 1.1.0) from the Design Kit's [releases](https://github.com/AutomatosAI/automatos-design-kit/releases), install it with **Settings → Appearance → Themes → Install theme**, then opt in to it. On the hosted edition, add it from **Marketplace → Themes** when it is listed there. See [Get Play or HUD](installing-and-choosing.md#get-play-or-hud).
 
 ## I chose a theme, but I see Studio. Why?
 
@@ -21,7 +21,7 @@ On the local edition, download the theme's .autotheme file from the Design Kit's
 | "This theme was withdrawn, so it is turned off for now." | Its version was withdrawn. You see the theme's base, Studio or Classic. | Wait for a new version, or choose another theme. |
 | "Safe mode: themes are off in this tab." | This tab is in safe mode. | Close the tab and open a new one. |
 | No notice | The theme was uninstalled (you now see the workspace default), or the workspace no longer lets members choose. | Ask an owner or admin. |
-| Studio's layout in a narrow window, a phone browser included | The app draws a theme's frame and pages only in a window 1024 pixels wide or more. | Widen the window. |
+| Studio's layout in a narrow window | The app draws a theme's frame and pages only in a window at least as wide as the theme needs. Play 1.2.0 and HUD 1.1.0 draw from 360 pixels, a phone's width; another theme may need 1024. | Widen the window, or update the theme. |
 
 See [When a theme fails](managing-themes.md#when-a-theme-fails) and [Safe mode](managing-themes.md#safe-mode).
 
@@ -31,17 +31,17 @@ The reason is written beside it. Either the workspace lets only its owner instal
 
 ## I uploaded Play (or HUD) and got "Only an Automatos admin can upload a theme under the "automatos" publisher."
 
-That publisher name, used by Play and HUD, is reserved for platform admins. On the local edition, upload it as the person who runs the local edition, who is one. On the hosted edition, add it from **Marketplace → Themes** when it is listed there. A signature file would also let the upload through, but no release is signed yet. See [Get Play or HUD](installing-and-choosing.md#get-play-or-hud).
+That publisher name, used by Play and HUD, is reserved for platform admins. On the local edition, upload it as the person who runs the local edition, who is one. On the hosted edition, add it from **Marketplace → Themes** when it is listed there. A signature file would also let the upload through: Automatos's signing key now ships, but no release is signed with it yet. See [Get Play or HUD](installing-and-choosing.md#get-play-or-hud).
 
 ## Why does my theme say "Private · not reviewed"?
 
 Because nobody at Automatos reviewed it. The scan is automatic, and a person reviews only themes submitted to the Marketplace. An uploaded theme keeps the label whatever its verdict, and each member opts in to it before it runs for them.
 
-A theme added from **Marketplace → Themes** never shows **Private · not reviewed**: a person reviewed every version listed there. It shows **Signed by Automatos** in Settings when its version carries a signature an active Automatos key verifies. No version is signed yet: see [Who vouches for a theme](README.md#who-vouches-for-a-theme).
+A theme added from **Marketplace → Themes** never shows **Private · not reviewed**: a person reviewed every version listed there. It shows **Signed by Automatos** in Settings when its version carries a signature an active Automatos key verifies. Automatos's signing key now ships, but no version is signed with it yet: see [Who vouches for a theme](README.md#who-vouches-for-a-theme).
 
 ## Why is "Make default" greyed?
 
-Only a theme that isn't private can be the workspace default, because a default runs for members who never said yes to its code. The reason is written beside the button: "A theme that was not reviewed can’t be the workspace default." Add the theme's Marketplace version instead, if it is listed. A signed upload could be the default too, but no upload can be signed yet. See [The workspace default](installing-and-choosing.md#the-workspace-default).
+Only a theme that isn't private can be the workspace default, because a default runs for members who never said yes to its code. The reason is written beside the button: "A theme that was not reviewed can’t be the workspace default." Add the theme's Marketplace version instead, if it is listed. A signed upload could be the default too, but no release is signed yet. See [The workspace default](installing-and-choosing.md#the-workspace-default).
 
 ## I opted in last week. Why does it ask again?
 
@@ -61,7 +61,7 @@ Open your Automatos address followed by **/safe-mode**. No theme code runs in th
 
 ## Where is "Customise look…"?
 
-In the **Appearance** menu: the sun, moon or screen button at the top of the app, next to the notifications bell. It shows only while a theme is your style and its layout is showing, in a window 1024 pixels wide or more. Classic and Studio have no looks. See [Looks](looks.md).
+In the **Appearance** menu: the sun, moon or screen button at the top of the app, next to the notifications bell. It shows only while a theme is your style and its layout is showing, in a window at least as wide as the theme needs. Classic and Studio have no looks. See [Looks](looks.md).
 
 ## Will an update, a roll back or an uninstall lose my looks?
 
@@ -75,9 +75,13 @@ No. Your choice and your looks are yours, in each workspace. Owners and admins c
 
 No. The Marketplace tab for themes is called **Themes**: **Marketplace → Themes**.
 
+## Can I talk to Auto in Play or HUD?
+
+Yes. Play 1.2.0 and HUD 1.1.0 have a voice button in their chat: hold it to talk, or hold the Space bar on a laptop or desktop. Where your workspace has Auto Live, the same button starts a live call. See [Voice Chat](../chat/voice.md).
+
 ## What does my phone get from my theme?
 
-Data, never code. The server keeps your choice, your looks and each theme's phone skin (its colours, fonts and mascot) for Automatos Go, the phone app. See [On Your Phone](on-your-phone.md).
+In a phone's browser, Play 1.2.0 and HUD 1.1.0 draw their own phone layouts. In Automatos Go, the phone app, it is data, never code: the server keeps your choice, your looks and each theme's phone skin (its colours, fonts and mascot). See [On Your Phone](on-your-phone.md).
 
 ## How do I make my own theme?
 

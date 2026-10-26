@@ -6,7 +6,7 @@ description: Tune how a theme looks for you, save and share your own looks, and 
 
 A look is one way a theme can look: a set of its settings, saved under a name. Change the look and the whole app follows at once. Looks belong to a theme. Classic and Studio have none.
 
-<!-- IMAGE: Make it yours, a theme's look page, with a look being tuned beside the app -->
+<figure><img src="../images/play-1440-look-editor-ember.png" alt="Play's look page: a live preview of Auto and a chat, the looks Ember, Obsidian, Aurora, Workshop and Daylight, and the settings for accent, background, type, Auto's shell and light, and glow."><figcaption><p>Play's look page, on the Ember preset. The preview follows each change.</p></figcaption></figure>
 
 ## Presets, the default look and your own looks
 
@@ -23,7 +23,7 @@ A look is one way a theme can look: a set of its settings, saved under a name. C
 2. Click **Customise look…**. It opens **Make it yours**.
 
 {% hint style="info" %}
-**Customise look…** shows only while a theme is your style and its layout is showing, in a window 1024 pixels wide or more.
+**Customise look…** shows only while a theme is your style and its layout is showing, in a window at least as wide as the theme needs. Play 1.2.0 and HUD 1.1.0 draw from a phone's width.
 {% endhint %}
 
 The theme draws **Make it yours** itself. When there is nothing to edit, the page says why:
@@ -32,7 +32,7 @@ The theme draws **Make it yours** itself. When there is nothing to edit, the pag
 | --- | --- |
 | "This style has no look to edit. Choose a theme with looks in the Appearance menu to make it yours." | Your style is Classic, Studio or a theme without a look page. |
 | "No theme is installed in this workspace yet. A workspace owner or admin can add one from Marketplace › Themes; then choose it in the Appearance menu to make it yours." | The workspace has no theme to choose. |
-| "It opens on a laptop or desktop screen: this theme's pages need a wider window." | The window is too narrow. |
+| "It opens on a laptop or desktop screen: this theme's pages need a wider window." | The window is narrower than the theme needs. |
 
 A theme can also have a **Style sheet** page of its own, which shows the theme's styles on your active look.
 
@@ -68,6 +68,8 @@ Their look pages are part of each theme, in the [Design Kit](https://github.com/
 - the looks row, with its presets and your looks;
 - the settings, **Save as new look**, **Reset** and **Delete** (for one of your own looks; it asks first);
 - **Share**, with **Export** and **Import** (paste a look's JSON).
+
+<figure><img src="../images/hud-390-look-editor-arc.png" alt="HUD's Look page at a phone's width, on the Arc look: See the style sheet, a live preview of Auto and the agents, and Share with Export." width="300"><figcaption><p>HUD's Look page in a phone's browser, on the Arc look.</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
