@@ -80,6 +80,16 @@
   * [Privacy & AI](automatos-go/privacy-and-ai.md)
   * [Troubleshooting](automatos-go/troubleshooting.md)
 
+## Themes
+
+* [About Themes](themes/README.md)
+* [Installing and Choosing](themes/installing-and-choosing.md)
+* [Looks](themes/looks.md)
+* [Managing Themes](themes/managing-themes.md)
+* [On Your Phone](themes/on-your-phone.md)
+* [Building Your Own](themes/building-your-own.md)
+* [Themes FAQ](themes/faq.md)
+
 ## Reference
 
 * [API Reference](api-reference.md)
