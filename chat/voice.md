@@ -144,6 +144,17 @@ See [EU AI Act: Article 50](../compliance/article-50.md) for the other notices.
 
 Chat has no voice settings of its own. Hold to talk uses your browser's voice. Auto Live speaks with a Retell voice: the one its agent was set up with, or another the workspace names in its Auto Live settings. Narration voices for Socials videos are a separate thing, chosen on each video post.
 
+## Languages
+
+- **Auto answers in the language you write or speak.**
+- **In Studio and the themes,** hold to talk hears you and speaks in your browser's language.
+- **On Automatos Go (iPhone),** talk to Auto in English or Portuguese (Portugal and Brazil), and switch with one tap.
+- **Auto's natural voice** is self-hosted and open source (Kokoro). It speaks 9 languages: English (US and UK), Spanish, French, Italian, Portuguese (Brazil), Hindi, Japanese and Mandarin. Self-hosted installs include it; the person who runs the server switches it on.
+
+{% hint style="info" %}
+**Coming: automatic language detection.** Speak in any of about 100 languages without choosing first. It is planned and not available yet.
+{% endhint %}
+
 ## On your phone
 
 Automatos Go, the phone app, has its own hold to talk.
