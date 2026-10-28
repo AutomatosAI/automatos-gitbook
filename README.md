@@ -23,7 +23,7 @@ Automatos AI is a platform for building, deploying, and managing autonomous AI a
 | Configure the platform | [Settings](settings/README.md) |
 | Connect Telegram, Slack, Discord or WhatsApp | [Channels](tools/channels.md) |
 | Use voice chat | [Voice Chat](chat/voice.md) |
-| Talk to Auto in my language | [Voice Chat: Languages](chat/voice.md#languages) |
+| Use Automatos from my iPhone | [Automatos Go](automatos-go/README.md) |
 | Run autonomous missions | [Missions](activity/missions.md) |
 | Explore the knowledge graph | [Knowledge Graph](knowledge/knowledge-graph.md) |
 | Use the REST API | [API Reference](api-reference.md) |
