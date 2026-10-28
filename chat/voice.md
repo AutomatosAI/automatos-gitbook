@@ -148,7 +148,7 @@ Chat has no voice settings of its own. Hold to talk uses your browser's voice. A
 
 - **Auto answers in the language you write or speak.**
 - **In Studio and the themes,** hold to talk hears you and speaks in your browser's language.
-- **On Automatos Go (iPhone),** talk to Auto in English or Portuguese (Portugal and Brazil), and switch with one tap.
+- **On Automatos Go (iPhone),** talk to Auto in English and Portuguese (Brazil), and switch with one tap.
 - **Auto's natural voice** is self-hosted and open source (Kokoro). It speaks 9 languages: English (US and UK), Spanish, French, Italian, Portuguese (Brazil), Hindi, Japanese and Mandarin. Self-hosted installs include it; the person who runs the server switches it on.
 
 {% hint style="info" %}
