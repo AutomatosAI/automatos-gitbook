@@ -67,4 +67,4 @@ flowchart LR
 | **Channel** | An external messaging platform (Telegram, Slack, Discord or WhatsApp) connected to your workspace |
 | **Knowledge Graph** | An auto-extracted network of entities and relationships from your documents |
 | **Memory** | Persistent agent memory — short-term (session) and long-term (cross-conversation) |
-| **Voice Chat** | Speak to agents and hear responses via speech-to-text and text-to-speech |
+| **Voice Chat** | Talking to Auto by voice: hold to talk for a quick spoken question, or Auto Live for a real-time voice call |

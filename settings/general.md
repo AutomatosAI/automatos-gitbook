@@ -52,7 +52,6 @@ Feature flags control optional platform capabilities. Available flags:
 
 | Flag | Description |
 | --- | --- |
-| **Voice chat** | Enable/disable voice input and text-to-speech |
 | **Advanced analytics** | Enable predictive alerts and bottleneck detection |
 | **Knowledge graph** | Enable automatic entity extraction from documents |
 | **Mission mode** | Enable autonomous multi-step mission execution |

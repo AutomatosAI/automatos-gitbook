@@ -12,7 +12,7 @@ Quick actions appear as buttons below the chat input. They switch the chat into 
 
 ### Live
 
-Starts a live voice conversation. Speak instead of typing, and hear the reply. Click **Live** again to turn it off. See [Voice Chat](voice.md).
+Starts Auto Live, a real-time voice call with Auto, on the conversation on screen. Click **Live** again to end the call. If Live can't start, hover over the button to see why. On the hosted edition, Auto Live comes with the Business plan. For a quick spoken question on any plan, hold the microphone button next to **Send** instead. See [Voice Chat](voice.md).
 
 ### Code
 

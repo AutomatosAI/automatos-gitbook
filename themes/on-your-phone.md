@@ -1,22 +1,39 @@
 ---
-description: Your theme choice, your looks and each theme's phone skin, as the server keeps them for Automatos Go, the phone app.
+description: Play and HUD in a phone's browser, and your theme choice, your looks and each theme's phone skin as the server keeps them for Automatos Go, the phone app.
 ---
 
 # On Your Phone
 
-This page says what the server keeps and serves for a phone, for Automatos Go, the phone app. The theme you choose and the looks you save on the web are kept on the server, so a phone reads the same records.
+A theme reaches a phone in two ways:
 
-A theme never sends code to a phone: only colours, font files and mascot images.
+- **In the phone's browser**, Automatos is the web app, and a theme draws itself as it does on a laptop, from the narrowest window it supports.
+- **In Automatos Go, the phone app**, the app draws its own screens. The theme you choose and the looks you save on the web are kept on the server, so the app reads the same records. A theme never sends code to the app: only colours, font files and mascot images.
 
-<!-- IMAGE: Settings → Phones & devices, where a phone is paired to the workspace -->
+## In your phone's browser
 
-## What the server keeps for a phone
+Play 1.2.1 and HUD 1.1.1 draw from 360 pixels wide, so a phone's browser shows their own phone layouts. Voice works there too: hold the voice button to talk to Auto (see [Voice Chat](../chat/voice.md)). A theme that needs a wider window shows Studio's layout on a phone instead.
+
+{% tabs %}
+{% tab title="Play" %}
+<figure><img src="../images/play-390-chat-ember.png" alt="Play's chat in a phone's browser: Auto's reply with a document card, the message box with the voice button and Send, and Chats and Shelf at the top." width="300"><figcaption><p>Play's phone layout, Ember look.</p></figcaption></figure>
+{% endtab %}
+
+{% tab title="HUD" %}
+<figure><img src="../images/hud-390-chat-arc.png" alt="HUD's chat in a phone's browser: Auto in the console ring, the reply with a document card, and Hold to talk between Type and Stop." width="300"><figcaption><p>HUD's phone layout, Arc look.</p></figcaption></figure>
+{% endtab %}
+{% endtabs %}
+
+## In Automatos Go
+
+What follows is what the server keeps and serves for Automatos Go.
+
+### What the server keeps for a phone
 
 - **Your choice.** The server keeps one theme choice per member per workspace. A phone gets the same answer a browser gets: your choice, else the workspace default, else Studio. See [Which theme you see](installing-and-choosing.md#which-theme-you-see).
 - **Your looks.** Looks are kept on the server per member, per workspace and per theme, for a theme installed in the workspace. A phone reads the same records as the web. See [Where your looks are kept](looks.md#where-your-looks-are-kept).
 - **The phone skin.** A theme can carry a phone block. The server turns it into data for a phone: colours, the theme's font files and its mascot's clips or still images. It never gives a phone the theme's code or style sheet.
 
-## The phone skin
+### The phone skin
 
 | Part | What it is |
 | --- | --- |
@@ -31,7 +48,7 @@ When the colours come from your look, a phone gets the look you last saved on th
 The scan report measures the contrast of every theme with a phone block: each text colour on its own fill (eight pairs) at 4.5:1, and the primary and focus-ring colours on the ground at 3:1. A pair under its minimum is an **Error**, so that version can't be listed in the Marketplace. A private upload still installs. See the **Contrast (AA)** row of the [scan report](installing-and-choosing.md#the-checks).
 {% endhint %}
 
-## When a phone gets no skin
+### When a phone gets no skin
 
 | Case | Why |
 | --- | --- |
