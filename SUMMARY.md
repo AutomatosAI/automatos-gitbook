@@ -61,6 +61,10 @@
   * [LLM & Costs](analytics/llm-costs.md)
   * [Tools & Integrations](analytics/tools.md)
 
+* [Plans & Billing](billing/README.md)
+  * [Credits](billing/credits.md)
+  * [Managing your plan](billing/managing.md)
+
 * [Settings](settings/README.md)
   * [General](settings/general.md)
   * [API Keys & Credentials](settings/credentials.md)

@@ -25,6 +25,15 @@ Platform-wide configuration:
 [Full guide →](general.md)
 {% endtab %}
 
+{% tab title="Billing" %}
+Hosted Studio only: your plan, credits and payments:
+- Plan, renewal date and credit balance
+- Buy or change a plan, top up credits
+- Your card and invoices, cancel or resume
+
+[Full guide →](../billing/README.md)
+{% endtab %}
+
 {% tab title="API Keys & Credentials" %}
 Manage API keys for LLM providers and external services:
 - Add, edit, and rotate credentials
