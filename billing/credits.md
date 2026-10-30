@@ -11,6 +11,7 @@ A **credit** is one US cent of AI usage at Automatos prices. Credits pay for AI 
 | Uses credits | Free |
 | --- | --- |
 | Auto and your agents, when they run on Automatos's AI keys | Anything that runs on **your own AI keys** (add them in **Settings → API Keys & Credentials**); your provider bills you directly |
+| Voice: Auto's spoken answers (charged as typed answers are), and [Auto Live](../chat/voice.md#auto-live) calls, charged by the minute when the call ends | Hearing Auto's answers read aloud, and your browser or phone listening to you |
 | | Free models, and your own Claude Code / CLI subscription |
 | | Automatos's own background work, such as routing, memory and checking answers |
 
