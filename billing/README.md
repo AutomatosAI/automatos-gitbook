@@ -12,7 +12,7 @@ Hosted Studio has three plans. You buy and manage them in **Settings → Billing
 
 **Pro: $29 a month.** 5 seats, 20 agents, 60 minutes of video render a month, with monthly AI credits included, so you don't need keys of your own.
 
-**Business: $99 a month.** 25 seats, unlimited agents, 240 minutes of video render a month, voice, and a larger monthly credit allowance. By invite: contact Automatos.
+**Business: $99 a month.** 25 seats, unlimited agents, 240 minutes of video render a month, and a larger monthly credit allowance. By invite: contact Automatos.
 
 **Enterprise: coming soon.** Contact Automatos.
 

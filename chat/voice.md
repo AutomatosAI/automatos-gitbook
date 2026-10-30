@@ -9,7 +9,7 @@ You can talk to Auto instead of typing, in two ways:
 | | What it is | Where you find it | Who has it |
 | --- | --- | --- | --- |
 | **Hold to talk** | A quick spoken question. Hold the voice button, speak, let go, and hear Auto's answer. | The microphone button next to **Send** in Studio's chat, and in the chat of a theme such as Play or HUD. | Every plan, and the local edition. |
-| **Auto Live** | A real-time voice call with Auto. You talk back and forth without holding anything. | The **Live** button in Studio's chat. In Play and HUD, the voice button starts a call when Auto Live is available. | Hosted edition: the Business plan. Local edition: once it is set up. See [Who has Auto Live](#who-has-auto-live). |
+| **Auto Live** | A real-time voice call with Auto. You talk back and forth without holding anything. | The **Live** button in Studio's chat. In Play and HUD, the voice button starts a call when Auto Live is available. | Hosted edition: every plan, paid by the minute from your credits. Local edition: once it is set up. See [Who has Auto Live](#who-has-auto-live). |
 
 Either way, what you say and what Auto answers land in the same conversation as your typed messages. You can switch between talking and typing at any time.
 
@@ -94,7 +94,7 @@ In Play and HUD, the voice button starts the call when Auto Live is available. P
 
 ### Who has Auto Live
 
-**Hosted edition.** Auto Live comes with the Business plan. The workspace's own Auto Live switch must also be on, and each workspace has a monthly allowance of Live minutes. On other plans, the **Live** button stays, and it tells you why Live can't start. Hold to talk works on every plan.
+**Hosted edition.** Auto Live is on every plan, and it is paid from your [credits](../billing/credits.md) like anything else Auto does. Each call is charged by the minute when it ends, and Auto's spoken answers are charged as typed answers are. A workspace with no credits left can't start a call until it tops up. The workspace's own Auto Live switch must also be on, and each workspace has a monthly allowance of Live minutes. Hold to talk works on every plan.
 
 **Local edition (self-hosted).** There is no plan limit, but Auto Live is off until the person who runs the server sets it up. It needs:
 
@@ -118,7 +118,7 @@ Hover over **Live** to see why it can't start. Clicking it still tries, and show
 
 | You see | What it means |
 | --- | --- |
-| Auto Live comes with the Business plan, and this workspace is on another plan. | Your hosted workspace's plan doesn't include Auto Live. Hold to talk still works. |
+| Auto Live is paid from your credits, and this workspace has none left. Top up on the Billing tab, then call again. | Your hosted workspace has run out of credits. Top up in **Settings → Billing**. Hold to talk still works on your own AI keys. |
 | Auto Live is switched off on this Automatos. | Live is off for the whole server. |
 | Auto Live isn't set up yet. An admin can set it up in Settings. | The Retell credentials are missing. See [Who has Auto Live](#who-has-auto-live). |
 | Auto Live is off for this workspace. An admin can turn it on in Settings. | The workspace's own Auto Live switch is off. There is no switch for it on a Settings screen yet: an owner or admin turns it on as in step 3 above. |
